@@ -4,12 +4,12 @@ import laptop from "../assets/laptop.webp"
 import phone from "../assets/phone.webp"
 ---
 
-<section class="hero">
+<section class="hero" style={`--pattern:url(${pattern.src})`}> <!-- style pattern -->
 
     <div class="container">
 
         <!-- textito -->
-         <div class="hero-text">
+         <div class="hero-text" >
             <h1>
                 Create Fast, <br/>
                 Effective Websites <br />
@@ -42,7 +42,7 @@ import phone from "../assets/phone.webp"
 <style>
 
 .hero{
-  padding:120px 0 80px 0;
+  padding:120px 0 100px 0;
   color:white;
   position:relative;
 
@@ -55,6 +55,9 @@ import phone from "../assets/phone.webp"
   display:grid;
   grid-template-columns: 1fr 1fr;
   align-items:center;
+  /* 2 abajo */
+  position:relative;
+  z-index:1;
 }
 
 /* txt */
@@ -115,4 +118,25 @@ import phone from "../assets/phone.webp"
   left:120px;
 }
 
+/* todo esto */
+/* pattern */
+.hero-text,
+.hero-images{
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background-image:var(--pattern);
+  background-repeat:repeat;
+  background-size:auto;
+
+  opacity:.15;
+
+  pointer-events:none;
+  z-index:0;
+}
 </style>
