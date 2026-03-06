@@ -10,8 +10,26 @@ import "../styles/global.css"
     </head>
     
     <body>
-        <Navbar/>
 
-        <slot/>
+        <div class="hero-wrapper">
+            <Navbar/>
+    
+            <slot/>
+
+        </div>
     </body>
 </html>
+
+
+<style>
+.hero-wrapper{
+  min-height:85vh;
+
+  background: linear-gradient(
+    180deg,
+    #2973e6 0%,
+    #1f5abd 40%,
+    #154195 100%
+  );
+}
+</style>
