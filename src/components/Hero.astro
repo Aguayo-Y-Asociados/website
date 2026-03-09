@@ -1,10 +1,9 @@
 ---
-import pattern from "../assets/hero-bg.png"
 import laptop from "../assets/laptop.webp"
 import phone from "../assets/phone.webp"
 ---
 
-<section class="hero" style={`--pattern:url(${pattern.src})`}> <!-- style pattern -->
+<section>
 
     <div class="container">
 
@@ -118,11 +117,12 @@ import phone from "../assets/phone.webp"
   left:120px;
 }
 
-/* todo esto */
+/* todo esto tambien es del style pattern*/
 /* pattern */
 .hero-text,
 .hero-images{
   position:relative;
+  color: #fff;
 }
 
 .hero::before{
