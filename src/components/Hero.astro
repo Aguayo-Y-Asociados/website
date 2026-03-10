@@ -4,9 +4,7 @@ import phone from "../assets/phone.webp"
 ---
 
 <section>
-
     <div class="container">
-
         <!-- textito -->
          <div class="hero-text" >
             <h1>
@@ -24,16 +22,15 @@ import phone from "../assets/phone.webp"
                 <a href="#" class="btn-primary">Get Started</a>
                 <a href="#" class="btn-secondary">How It Works</a>
             </div>
-
          </div>
 
          <!-- imagenes -->
           <div class="hero-images">
-            <img src={laptop.src} class="laptop" alt="editor" />
+            <div class="box">
+              <img src={laptop.src} class="laptop" alt="editor" />
+            </div>
             <img src={phone.src} class="phone" alt="mobile preview" />
-
           </div>
-
     </div>
 
 </section>
@@ -44,15 +41,14 @@ import phone from "../assets/phone.webp"
   padding:120px 0 100px 0;
   color:white;
   position:relative;
-
 }
 
 .container{
-  max-width:1200px;
+  max-width:1350px;
   margin:auto;
 
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 5fr;
   align-items:center;
   /* 2 abajo */
   position:relative;
@@ -60,12 +56,11 @@ import phone from "../assets/phone.webp"
 }
 
 /* txt */
-
 .hero-text h1{
-  font-size:64px;
+  font-size:70px;
   line-height:1.1;
   font-weight:700;
-  margin-bottom:24px;
+  margin-top: -6rem;
 }
 
 .hero-text p{
@@ -106,15 +101,20 @@ import phone from "../assets/phone.webp"
 }
 
 .laptop{
-  width:100%;
+  margin-top: 3rem;
+  padding-left: 5rem;
+  width:135%;
 }
+
+/* .box{ */
+/*   margin-top: 5rem; */
+/* } */
 
 .phone{
   position:absolute;
-  width:220px;
-
-  bottom:-40px;
-  left:120px;
+  width:290px;
+  bottom:-120px;
+  left:310px;
 }
 
 /* todo esto tambien es del style pattern*/
