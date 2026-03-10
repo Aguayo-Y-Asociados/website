@@ -2,6 +2,7 @@
 import Navbar from "../components/navbar/Navbar.astro"
 import GradientPatternWrapper from "../components/ui/GradientPatternWrapper.astro"
 import Hero from "../components/Hero.astro"
+import HeroFooter from "../components/HeroFooter.astro"
 import "../styles/global.css"
 ---
 
@@ -12,10 +13,11 @@ import "../styles/global.css"
     </head>
 
     <body>
-        <GradientPatternWrapper height="55vh">
-        <Navbar/>
-        <Hero/>
-        <slot/>
+        <GradientPatternWrapper height="55%">
+          <Navbar/>
+          <Hero/>
+          <slot/>
         </GradientPatternWrapper>
+        <HeroFooter/>
     </body>
 </html>

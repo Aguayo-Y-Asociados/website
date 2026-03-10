@@ -1,5 +1,31 @@
-body{
+body {
   font-family: system-ui, sans-serif;
   margin: 10px;
+  margin: 0;
+}
+
+.full-gray {
+  background-color: #eeeff6;
+}
+
+.box {
+  max-width: 1350px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding: 3rem 0;
+}
+
+.box-container h3 {
+  color: #303747;
+  margin: 0;
+}
+
+.box-container p {
   margin: 0;
 }
