@@ -60,46 +60,71 @@ import Drafts from "../components/Drafts.astro";
   </div>
 </section>
 
-<section class="first-testimonial">
-	<!-- las comillas -->
-	<svg width="120" height="120" viewBox="0 0 8 8" fill="currentColor" color="#f1f3f6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z" transform="translate(0 1)"></path></svg>
+<section class="gris">
+  <div class="container">
+    <div class="testimonial-container">
+      <div class="comilla-1">
+        <!-- las comillas -->
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 8 8"
+          fill="currentColor"
+          color="#f1f3f6"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z"
+            transform="translate(0 1)"></path></svg
+        >
+      </div>
 
-	<div class="container">
-		<div class="testimonial-card">
+      <div class="testimonial-card comilla-2">
+        <!-- imgen client -->
+        <div class="testimonial-image">
+          <img src="/src/assets/client-review.jpg" alt="client" />
+        </div>
 
-			<!-- imgen client -->
-			 <div class="testimonial-image">
-				<img src="/src/assets/client-review.jpg" alt="client">
-			 </div>
+        <!-- contenido -->
+        <div class="testimonial-content">
+          <!-- estrellas -->
 
-			 <!-- contenido -->
-			 <div class="testimonial-content">
+          <div class="stars">★★★★★</div>
+          <!-- texto -->
+          <p class="testimonial-text">
+            Kadence Blocks and Kadence Theme Pro have completely changed my
+            business and the way I design websites. I’ve tried several page
+            builders and block-based builders, and Kadence, by far, has the
+            easiest user interface and functionality. I can easily build and
+            style about 99% of web pages without any custom CSS.
+          </p>
 
-				<!-- estrellas -->
-				 <div class="stars"> 
-					 <img src="/src/assets/estrella.png">
-				 </div>
+          <!-- PERSONA 5 REFERENCIA -->
+          <div class="author">
+            <h4>Lissete Harrington</h4>
+            <span>Mila Design Co.</span>
+          </div>
+        </div>
+      </div>
 
-				 <!-- texto -->
-				  <p class="testimonial-text">
-					Kadence Blocks and Kadence Theme Pro have completely changed my
-					business and the way I design websites. I’ve tried several page
-					builders and block-based builders, and Kadence, by far, has the
-					easiest user interface and functionality. I can easily build and
-					style about 99% of web pages without any custom CSS.
-				  </p>
-
-				  <!-- PERSONA 5 REFERENCIA -->
-				   <div class="author">
-						<h4>Lissete Harrington</h4>
-						<span>Mila Design Co.</span>
-				   </div>
-			 </div>
-		</div>
-	</div>
-
-	<svg width="120" height="120" viewBox="0 0 8 8" fill="currentColor" color="#f1f3f6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"> <path d="M0 0v3h2c0 1.11-.89 2-2 2v1c1.65 0 3-1.35 3-3v-3h-3zm5 0v3h2c0 1.11-.89 2-2 2v1c1.65 0 3-1.35 3-3v-3h-3z" transform="translate(0 1)"></path></svg>
-
+      <div class="comilla-3">
+        <svg
+          width="120"
+          height="120"
+          viewBox="0 0 8 8"
+          fill="currentColor"
+          color="#f1f3f6"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M0 0v3h2c0 1.11-.89 2-2 2v1c1.65 0 3-1.35 3-3v-3h-3zm5 0v3h2c0 1.11-.89 2-2 2v1c1.65 0 3-1.35 3-3v-3h-3z"
+            transform="translate(0 1)"></path></svg
+        >
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
@@ -107,6 +132,17 @@ import Drafts from "../components/Drafts.astro";
 </section>
 
 <style>
+  .stars {
+    color: #fab200;
+    font-size: 40px;
+    padding-left: 1.1rem;
+  }
+
+  .gris {
+    background-color: #f7f8fb;
+    width: 100%;
+  }
+
   .features {
     padding: 120px 0;
     background: #f8f9fc;
@@ -178,65 +214,76 @@ import Drafts from "../components/Drafts.astro";
     line-height: 1.6;
   }
 
-/* card */
+  .testimonial-card {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
 
-.testimonial-card{
-  display:grid;
-  grid-template-columns:250px 1fr;
-  background:white;
-  border-radius:10px;
+  /* imagen */
+  .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 
-  box-shadow:0 10px 30px rgba(0,0,0,.05);
-}
+  /* contenido */
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-/* imagen */
+  /* texto */
+  .testimonial-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #374151;
+    padding: 1.5rem;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 
-.testimonial-image img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:10px;
-}
+  /* autor */
+  .author h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    padding-left: 1.5rem;
+    margin: 0;
+    padding-bottom: 0;
+  }
 
-/* contenido */
+  .author span {
+    margin: 0;
+    font-size: 12px;
+    padding-left: 1.5rem;
+    color: #6b7280;
+  }
 
-.testimonial-content{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-}
+  /* containers */
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fc;
+    padding-bottom: 7rem;
+  }
 
-/* estrellas */
+  .comilla-1 {
+    width: 10%;
+  }
 
-.stars{
-  display:flex;
-}
+  .comilla-2 {
+    width: 70%;
+  }
 
-.stars img{
-  width:150px;
-}
-
-/* texto */
-
-.testimonial-text{
-  font-size:18px;
-  line-height:1.7;
-  color:#374151;
-  margin-bottom:12px;
-}
-
-/* autor */
-
-.author h4{
-  font-size:20px;
-  font-weight:700;
-  color:#111827;
-  margin-bottom:4px;
-}
-
-.author span{
-  font-size:12px;
-  color:#6b7280;
-}
+  .comilla-3 {
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 </style>
-
