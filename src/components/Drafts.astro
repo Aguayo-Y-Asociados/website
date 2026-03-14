@@ -1,0 +1,79 @@
+---
+import draft1 from "../assets/drafts/draft1.webp";
+import draft2 from "../assets/drafts/draft2.jpg";
+import draft3 from "../assets/drafts/draft3.jpg";
+import draft4 from "../assets/drafts/draft4.jpg";
+import draft5 from "../assets/drafts/draft5.jpg";
+---
+
+<div class="container-blue">
+  <div class="container boxes">
+    <div class="feature">
+      <p>Introducing <span class="bluesito">Kadence AI ✦.</span></p>
+    </div>
+    <div class="container boxes">
+      <h3 class="title-draft">Next level site creation with AI</h3>
+    </div>
+  </div>
+  <div class="container-images">
+    <img src={draft1.src} class="laptop" alt="editor" />
+    <img src={draft2.src} class="laptop" alt="editor" />
+    <img src={draft3.src} class="laptop" alt="editor" />
+    <img src={draft4.src} class="laptop" alt="editor" />
+    <img src={draft5.src} class="laptop" alt="editor" />
+  </div>
+</div>
+
+<style>
+  .container-blue {
+    background-color: #1c202b;
+  }
+
+  .feature {
+    position: relative;
+    width: 18%;
+    padding: 13px 1px;
+    background-color: #333741;
+    margin: 0 auto;
+    text-align: center;
+    top: 7em;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #454851;
+  }
+
+  .feature p {
+    font-size: 1.1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title-draft {
+    font-size: 4rem;
+    color: #f6f6f6;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10rem;
+  }
+
+  .bluesito {
+    color: #639bef;
+  }
+
+  p {
+    color: white;
+  }
+
+  .container-images {
+    display: flex;
+    gap: 3rem;
+    margin-top: 7rem;
+  }
+
+  .container-images img {
+    width: 20%;
+    border-radius: 5px;
+  }
+</style>

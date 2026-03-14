@@ -1,136 +1,139 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro"
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Drafts from "../components/Drafts.astro";
 // import Hero from "../components/Hero.astro"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-
-<BaseLayout>
-</BaseLayout>
+<BaseLayout />
 
 <section class="features">
+  <div class="features-header">
+    <h2>Kadence Simplifies The <br /> Web Design Process</h2>
+    <p>
+      Say goodbye to bloated themes, clunky plugins, and limited customization
+      options foerever.
+    </p>
+  </div>
 
-	<div class="features-header">
-		<h2>Kadence Simplifies The <br> Web Design Process</h2>
-		<p>
-			Say goodbye to bloated themes, clunky plugins, and limited
-			customization options foerever.
-		</p>
-	</div>
+  <div class="features-card">
+    <div class="features-grid">
+      <!-- imgs -->
+      <div class="features-images">
+        <img
+          src="/src/assets/homepage-test.webp"
+          class="feature-img"
+          alt="preview"
+        />
+      </div>
 
-	<div class="features-card">
-		<div class="features-grid">
+      <!-- txt -->
+      <div class="features-text">
+        <div class="feature">
+          <h3>Lightning-Fast Performance</h3>
+          <p>
+            Our products have effiecient, clean code that ensures quick loading
+            times and smooth performance across all devices types.
+          </p>
+        </div>
 
-			<!-- imgs -->
-			 <div class="features-images">
-				<img src="/src/assets/homepage-test.webp" class="feature-img" alt="preview">
-			 </div>
+        <div class="feature">
+          <h3>Easy to use</h3>
+          <p>
+            With Kadence Blocks, you can create complex layouts and stylish
+            elements directly to the Gutenberg editor.
+          </p>
+        </div>
 
-			 <!-- txt -->
-			  <div class="features-text">
-				<div class="feature">
-					<h3>Lightning-Fast Performance</h3>
-					<p>
-						Our products have effiecient, clean code that ensures quick loading
-						times and smooth performance across all devices types.
-					</p>
-				</div>
-
-				<div class="feature">
-					<h3>Easy to use</h3>
-					<p>
-						With Kadence Blocks, you can create complex layouts and
-						stylish elements directly to the Gutenberg editor.
-					</p>
-
-				</div>
-
-				<div class="feature">
-					<h3>Endless Customization</h3>
-					<p>
-						Form advanced header and footer builders to extensive color and
-						font settings, Kadence allows for deep customization without
-						the need for custom coding.
-					</p>
-				</div>
-
-			  </div>
-		</div>
-	</div>
+        <div class="feature">
+          <h3>Endless Customization</h3>
+          <p>
+            Form advanced header and footer builders to extensive color and font
+            settings, Kadence allows for deep customization without the need for
+            custom coding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<section>
+  <Drafts />
+</section>
 
 <style>
-	.features{
-  padding:120px 0;
-  background:#f8f9fc;
-}
+  .features {
+    padding: 120px 0;
+    background: #f8f9fc;
+  }
 
-/* header */
+  /* header */
 
-.features-header{
-  text-align:center;
-  max-width:900px;
-  margin:auto;
-  margin-bottom:60px;
-}
+  .features-header {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
 
-.features-header h2{
-  font-size:48px;
-  font-weight:700;
-  color:#1e293b;
-  margin-bottom:20px;
-}
+  .features-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+  }
 
-.features-header p{
-  font-size:18px;
-  color:#6b7280;
-}
+  .features-header p {
+    font-size: 18px;
+    color: #6b7280;
+  }
 
-/* card */
+  /* card */
 
-.features-card{
-  max-width:1200px;
-  margin:auto;
-  background:white;
-  border-radius:14px;
-  padding:60px;
+  .features-card {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 14px;
+    padding: 60px;
 
-  box-shadow:0 5px 30px rgba(0,0,0,.05);
-}
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+  }
 
-/* grid */
+  /* grid */
 
-.features-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
-}
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
 
-/* img */
+  /* img */
 
-.feature-image{
-  max-width:50px;
-  width:100%;
-}
+  .feature-images {
+    max-width: 50px;
+    width: 80%;
+  }
 
-/* texto */
+  /* texto */
 
-.feature{
-  margin-bottom:30px;
-}
+  .feature {
+    margin-bottom: 30px;
+  }
 
-.feature h3{
-  font-size:24px;
-  margin-bottom:10px;
-  color:#111827;
-}
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111827;
+  }
 
-.feature p{
-  color:#6b7280;
-  line-height:1.6;
-}
+  .feature p {
+    color: #6b7280;
+    line-height: 1.6;
+  }
 </style>
+
