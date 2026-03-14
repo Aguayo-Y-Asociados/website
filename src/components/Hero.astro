@@ -1,122 +1,121 @@
 ---
-import laptop from "../assets/laptop.webp"
-import phone from "../assets/phone.webp"
+import laptop from "../assets/laptop.webp";
+import phone from "../assets/phone.webp";
 ---
 
 <section>
-    <div class="container">
-        <!-- textito -->
-         <div class="hero-text" >
-            <h1>
-                Create Fast, <br/>
-                Effective Websites <br />
-                With Ease
-            </h1>
-            <p>
-                Building a WordPress website has never been easier with the
-                Kadence theme, our powerful WordPress plugins, and AI website builder.
-            </p>
-            <div class="buttons">
-                <a href="#" class="btn-primary">Get Started</a>
-                <a href="#" class="btn-secondary">How It Works</a>
-            </div>
-         </div>
-
-         <!-- imagenes -->
-          <div class="hero-images">
-            <img src={laptop.src} class="laptop" alt="editor" />
-            <img src={phone.src} class="phone" alt="mobile preview" />
-          </div>
+  <div class="container">
+    <!-- textito -->
+    <div class="hero-text">
+      <h1>
+        Create Fast, <br />
+        Effective Websites <br />
+        With Ease
+      </h1>
+      <p>
+        Building a WordPress website has never been easier with the Kadence
+        theme, our powerful WordPress plugins, and AI website builder.
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn-primary">Get Started</a>
+        <a href="#" class="btn-secondary">How It Works</a>
+      </div>
     </div>
+
+    <!-- imagenes -->
+    <div class="hero-images">
+      <img src={laptop.src} class="laptop" alt="editor" />
+      <img src={phone.src} class="phone" alt="mobile preview" />
+    </div>
+  </div>
 </section>
 
 <style>
-.hero{
-  padding:120px 0 100px 0;
-  color:white;
-  position:relative;
-}
+  .hero {
+    padding: 120px 0 100px 0;
+    color: white;
+    position: relative;
+  }
 
-.container{
-  max-width:1350px;
-  margin:auto;
+  .container {
+    max-width: 1350px;
+    margin: auto;
 
-  display:grid;
-  grid-template-columns: 4fr 5fr;
-  align-items:center;
-  /* 2 abajo */
-  position:relative;
-  z-index:1;
-}
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    align-items: center;
+    /* 2 abajo */
+    position: relative;
+    z-index: 1;
+  }
 
-/* txt */
-.hero-text h1{
-  font-size:70px;
-  line-height:1.1;
-  font-weight:700;
-  margin-top: -6rem;
-}
+  /* txt */
+  .hero-text h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-top: -6rem;
+  }
 
-.hero-text p{
-  font-size:18px;
-  opacity:.9;
-  max-width:520px;
-  margin-bottom:30px;
-}
+  .hero-text p {
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 520px;
+    margin-bottom: 30px;
+  }
 
-/* btns*/
+  /* btns*/
 
-.buttons{
-  display:flex;
-  gap:16px;
-}
+  .buttons {
+    display: flex;
+    gap: 16px;
+  }
 
-.btn-primary{
-  background:#1d2433;
-  padding:14px 26px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
-  font-weight:600;
-}
+  .btn-primary {
+    background: #1d2433;
+    padding: 14px 26px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
 
-.btn-secondary{
-  border:1px solid rgba(255,255,255,.4);
-  padding:14px 26px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
-}
+  .btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 14px 26px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+  }
 
-/* IMÁGENES */
+  /* IMÁGENES */
 
-.hero-images{
-  position:relative;
-}
+  .hero-images {
+    position: relative;
+  }
 
-.laptop{
-  margin-top: 3rem;
-  padding-left: 5rem;
-  width:135%;
-}
+  .laptop {
+    margin-top: 3rem;
+    padding-left: 5rem;
+    width: 135%;
+  }
 
-/* .box{ */
-/*   margin-top: 5rem; */
-/* } */
+  /* .box{ */
+  /*   margin-top: 5rem; */
+  /* } */
 
-.phone{
-  position:absolute;
-  width:290px;
-  bottom:-120px;
-  left:310px;
-}
+  .phone {
+    position: absolute;
+    width: 290px;
+    bottom: -120px;
+    left: 310px;
+  }
 
-/* todo esto tambien es del style pattern*/
-/* pattern */
-.hero-text,
-.hero-images{
-  position:relative;
-  color: #fff;
-}
-
+  /* todo esto tambien es del style pattern*/
+  /* pattern */
+  .hero-text,
+  .hero-images {
+    position: relative;
+    color: #fff;
+  }
 </style>

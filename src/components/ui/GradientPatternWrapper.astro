@@ -1,6 +1,6 @@
 ---
-import pattern from "../../assets/hero-bg.png"
-const { height = "85vh" } = Astro.props
+import pattern from "../../assets/hero-bg.png";
+const { height = "85vh" } = Astro.props;
 ---
 
 <div
@@ -11,38 +11,40 @@ const { height = "85vh" } = Astro.props
 </div>
 
 <style>
-.gradient-wrapper{
-  position:relative;
-  min-height:var(--height);
+  .gradient-wrapper {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    min-height: var(--height);
 
-  background: linear-gradient(
-    90deg,
-    #2a4463 0%,
-    #223a56 35%,
-    #1c2d43 70%,
-    #162536 100%
-  );
-}
+    background: linear-gradient(
+      90deg,
+      #2a4463 0%,
+      #223a56 35%,
+      #1c2d43 70%,
+      #162536 100%
+    );
+  }
 
-/* pattern */
-.gradient-wrapper::before{
-  content:"";
-  position:absolute;
-  inset:0;
+  /* pattern */
+  .gradient-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
 
-  background-image:var(--pattern);
-  background-repeat:repeat;
-  background-size:auto;
+    background-image: var(--pattern);
+    background-repeat: repeat;
+    background-size: auto;
 
-  opacity:.15;
+    opacity: 0.15;
 
-  pointer-events:none;
-  z-index:0;
-}
+    pointer-events: none;
+    z-index: 0;
+  }
 
-/* contenido encima */
-.gradient-wrapper > *{
-  position:relative;
-  z-index:1;
-}
+  /* contenido encima */
+  .gradient-wrapper > * {
+    position: relative;
+    z-index: 1;
+  }
 </style>
