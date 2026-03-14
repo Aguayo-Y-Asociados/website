@@ -25,7 +25,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 
 			<!-- imgs -->
 			 <div class="features-images">
-				<img src="/src/assets/homepage-test.webp">
+				<img src="/src/assets/homepage-test.webp" class="feature-img" alt="preview">
 			 </div>
 
 			 <!-- txt -->
@@ -60,3 +60,77 @@ import BaseLayout from "../layouts/BaseLayout.astro"
 		</div>
 	</div>
 </section>
+
+
+<style>
+	.features{
+  padding:120px 0;
+  background:#f8f9fc;
+}
+
+/* header */
+
+.features-header{
+  text-align:center;
+  max-width:900px;
+  margin:auto;
+  margin-bottom:60px;
+}
+
+.features-header h2{
+  font-size:48px;
+  font-weight:700;
+  color:#1e293b;
+  margin-bottom:20px;
+}
+
+.features-header p{
+  font-size:18px;
+  color:#6b7280;
+}
+
+/* card */
+
+.features-card{
+  max-width:1200px;
+  margin:auto;
+  background:white;
+  border-radius:14px;
+  padding:60px;
+
+  box-shadow:0 5px 30px rgba(0,0,0,.05);
+}
+
+/* grid */
+
+.features-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+/* img */
+
+.feature-image{
+  max-width:50px;
+  width:100%;
+}
+
+/* texto */
+
+.feature{
+  margin-bottom:30px;
+}
+
+.feature h3{
+  font-size:24px;
+  margin-bottom:10px;
+  color:#111827;
+}
+
+.feature p{
+  color:#6b7280;
+  line-height:1.6;
+}
+</style>
