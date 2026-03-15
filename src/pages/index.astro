@@ -1,10 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Drafts from "../components/Drafts.astro";
-// import Hero from "../components/Hero.astro"
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <BaseLayout />
@@ -20,7 +16,6 @@ import Drafts from "../components/Drafts.astro";
 
   <div class="features-card">
     <div class="features-grid">
-      <!-- imgs -->
       <div class="features-images">
         <img
           src="/src/assets/homepage-test.webp"
@@ -29,7 +24,6 @@ import Drafts from "../components/Drafts.astro";
         />
       </div>
 
-      <!-- txt -->
       <div class="features-text">
         <div class="feature">
           <h3>Lightning-Fast Performance</h3>
@@ -64,7 +58,6 @@ import Drafts from "../components/Drafts.astro";
   <div class="container">
     <div class="testimonial-container">
       <div class="comilla-1">
-        <!-- las comillas -->
         <svg
           width="120"
           height="120"
@@ -81,17 +74,12 @@ import Drafts from "../components/Drafts.astro";
       </div>
 
       <div class="testimonial-card comilla-2">
-        <!-- imgen client -->
         <div class="testimonial-image">
           <img src="/src/assets/client-review.jpg" alt="client" />
         </div>
 
-        <!-- contenido -->
         <div class="testimonial-content">
-          <!-- estrellas -->
-
           <div class="stars">★★★★★</div>
-          <!-- texto -->
           <p class="testimonial-text">
             Kadence Blocks and Kadence Theme Pro have completely changed my
             business and the way I design websites. I’ve tried several page
@@ -100,7 +88,6 @@ import Drafts from "../components/Drafts.astro";
             style about 99% of web pages without any custom CSS.
           </p>
 
-          <!-- PERSONA 5 REFERENCIA -->
           <div class="author">
             <h4>Lissete Harrington</h4>
             <span>Mila Design Co.</span>
@@ -131,178 +118,146 @@ import Drafts from "../components/Drafts.astro";
   <Drafts />
 </section>
 
-<section class="cards-slider" style="background-color: #eeeff7;">
+<section class="cards-slider-section">
   <div class="container">
-
-    <!-- txt cabecera -->
-       <div class="header">
-        
+    <div class="header-with-arrows">
+      <div class="header-text">
         <h3>The Features You Need to Transform Your Website</h3>
-        <p>Explore the key Kadence features that make customization and performance a breeze.</p>
-
-       </div>
-       
-    <div class="slider">
-
-       <!-- card slide 1 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Mega-Menu-Builder-WordPress-Kadence.jpg" />
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>HEADERS & FOOTERS</p>
-
-            <h4>Craft custom-looking headers & footers</h4>
-
-            <p>
-              Easily design and customize your headers and footers directly in WordPress. Achieve a cohesive, polished look for your site that enhances navigation and reinforces your brand—no coding required!
-            </p>
-
-           </div>
-        </div>
-
-      <!-- card slide 2 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Global-Fonts-Color-Settings-Kadence-1024x768.jpg"/>
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>GLOBAL SETTINGS</p>
-
-            <h4>Effortless sitewide design controls</h4>
-
-            <p>
-              Control fonts, colors, and spacing sitewide with our global theme settings. Make quick, consistent updates across every page—perfect for keeping your branding sharp and your workflow efficient.
-            </p>
-
-           </div>
-        </div>
-
-      <!-- card slide 3 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-AB-Testing-WordPress-Kadence-1024x768.jpg" />
-
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>A/B TESTING</p>
-
-            <h4>Optimize your site with data-driven insights</h4>
-
-            <p>
-              Test, track, and optimize headlines, buttons, and layouts right inside WordPress. See real-time results and make confident tweaks that boost conversions—no extra tools or guesswork needed!
-            </p>
-
-           </div>
-        </div>
-        
-      <!-- card slide 4 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Forms-Kadence-scaled-1-1024x768.jpg" />
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>FORMS</p>
-
-            <h4>Build powerful, flexible forms</h4>
-
-            <p>
-              Create beautiful, high-converting forms without relying on third-party plugins. From lead capture to surveys, design forms tailored to your needs—all seamlessly integrated into your site.
-            </p>
-
-           </div>
-        </div>
-
-        <!-- card slide 5 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Dynamic-Content-Kadence-scaled-1-1024x768.jpg" />
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>Personalize every experience on your site</p>
-
-            <h4>Optimize your site with data-driven insights</h4>
-
-            <p>
-              Display dynamic content that adapts to your audience. Showcase relevant products, user-specific greetings, or tailored offers to keep visitors engaged and coming back for more.
-            </p>
-
-           </div>
-        </div>
-
-        <!-- card slide 6 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Popup-Builder-Kadence-scaled-1-1024x768.jpg" />
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>DYNAMIC CONTENT</p>
-
-            <h4>Personalize every experience on your site</h4>
-
-            <p>
-              Display dynamic content that adapts to your audience. Showcase relevant products, user-specific greetings, or tailored offers to keep visitors engaged and coming back for more.
-            </p>
-
-           </div>
-        </div>
-
-        <!-- card slide 7 -->
-        <div class="card-slider">
-
-          <!-- img card slider -->
-          <div class="card-slider-img">
-            <img src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-WooCommerce-Shopkit-scaled-1-1024x768.jpg"/>
-
-          </div>
-
-          <!-- content card slider -->
-           <div class="card-slider-content">
-            <p>E-COMMERCE TOOLS</p>
-
-            <h4>Easily customize your WooCommerce store</h4>
-
-            <p>
-              Tailor your WooCommerce shop to fit your unique needs with ShopKit. From product displays to checkout flows, create a seamless shopping experience that converts browsers into buyers.
-            </p>
-
-           </div>
-        </div>
-
+        <p>
+          Explore the key Kadence features that make customization and
+          performance a breeze.
+        </p>
+      </div>
+      <div class="slider-arrows">
+        <img
+          src="src/assets/flecha-correcta.png"
+          class="arrow left"
+          id="prev"
+          alt="Anterior"
+        />
+        <img
+          src="src/assets/flecha-correcta.png"
+          class="arrow right"
+          id="next"
+          alt="Siguiente"
+        />
+      </div>
     </div>
-
   </div>
 
+  <div class="slider" id="slider">
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #032a51;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Mega-Menu-Builder-WordPress-Kadence.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>HEADERS & FOOTERS</p>
+        <h4>Craft custom-looking headers & footers</h4>
+        <p>
+          Easily design and customize your headers and footers directly in
+          WordPress.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #0c88ee;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Global-Fonts-Color-Settings-Kadence-1024x768.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>GLOBAL SETTINGS</p>
+        <h4>Effortless sitewide design controls</h4>
+        <p>
+          Control fonts, colors, and spacing sitewide with our global theme
+          settings.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #a7d0f9;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-AB-Testing-WordPress-Kadence-1024x768.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>A/B TESTING</p>
+        <h4>Optimize your site with data-driven insights</h4>
+        <p>
+          Test, track, and optimize headlines, buttons, and layouts right inside
+          WordPress.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #032a51;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Forms-Kadence-scaled-1-1024x768.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>FORMS</p>
+        <h4>Build powerful, flexible forms</h4>
+        <p>
+          Create beautiful, high-converting forms without relying on third-party
+          plugins.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #0c88ee;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Dynamic-Content-Kadence-scaled-1-1024x768.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>DYNAMIC CONTENT</p>
+        <h4>Personalize every experience on your site</h4>
+        <p>
+          Display dynamic content that adapts to your audience interests and
+          needs.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #a7d0f9;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-Popup-Builder-Kadence-scaled-1-1024x768.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>POPUP BUILDER</p>
+        <h4>Engage visitors with targeted popups</h4>
+        <p>
+          Create high-converting popups and banners to capture leads and promote
+          offers.
+        </p>
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-slider-img" style="background-color: #032a51;">
+        <img
+          src="https://www.kadencewp.com/wp-content/uploads/2025/01/Feature-WooCommerce-Shopkit-scaled-1-1024x768.jpg"
+        />
+      </div>
+      <div class="card-slider-content">
+        <p>E-COMMERCE TOOLS</p>
+        <h4>Easily customize your WooCommerce store</h4>
+        <p>
+          Tailor your WooCommerce shop to fit your unique needs with ShopKit
+          features.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <style>
@@ -321,8 +276,6 @@ import Drafts from "../components/Drafts.astro";
     padding: 120px 0;
     background: #f8f9fc;
   }
-
-  /* header */
 
   .features-header {
     text-align: center;
@@ -343,19 +296,14 @@ import Drafts from "../components/Drafts.astro";
     color: #6b7280;
   }
 
-  /* card */
-
   .features-card {
     max-width: 1200px;
     margin: auto;
     background: white;
     border-radius: 14px;
     padding: 60px;
-
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
   }
-
-  /* grid */
 
   .features-grid {
     display: grid;
@@ -363,15 +311,6 @@ import Drafts from "../components/Drafts.astro";
     gap: 60px;
     align-items: center;
   }
-
-  /* img */
-
-  .feature-images {
-    max-width: 50px;
-    width: 80%;
-  }
-
-  /* texto */
 
   .feature {
     margin-bottom: 30px;
@@ -396,7 +335,6 @@ import Drafts from "../components/Drafts.astro";
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   }
 
-  /* imagen */
   .testimonial-image img {
     width: 100%;
     height: 100%;
@@ -404,14 +342,12 @@ import Drafts from "../components/Drafts.astro";
     border-radius: 10px;
   }
 
-  /* contenido */
   .testimonial-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  /* texto */
   .testimonial-text {
     font-size: 18px;
     line-height: 1.7;
@@ -421,24 +357,20 @@ import Drafts from "../components/Drafts.astro";
     padding-top: 0;
   }
 
-  /* autor */
   .author h4 {
     font-size: 20px;
     font-weight: 700;
     color: #111827;
     padding-left: 1.5rem;
     margin: 0;
-    padding-bottom: 0;
   }
 
   .author span {
-    margin: 0;
     font-size: 12px;
     padding-left: 1.5rem;
     color: #6b7280;
   }
 
-  /* containers */
   .testimonial-container {
     display: flex;
     justify-content: space-between;
@@ -449,11 +381,9 @@ import Drafts from "../components/Drafts.astro";
   .comilla-1 {
     width: 10%;
   }
-
   .comilla-2 {
     width: 70%;
   }
-
   .comilla-3 {
     display: flex;
     width: 10%;
@@ -461,94 +391,137 @@ import Drafts from "../components/Drafts.astro";
     justify-content: flex-end;
   }
 
-/* cards slider style */
+  /* --- SLIDER STYLES --- */
+  .container {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
 
-.cards-slider{
-  background: #eeeff7;
-}
-.card-slider{
-  background:#fff;
-  padding:120px 0;
-}
+  .cards-slider-section {
+    background: #eeeff7;
+    padding: 120px 0;
+    overflow-x: hidden;
+  }
 
-/* header */
+  .header-with-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 
-.header{
-  max-width: 100%;
-  margin-bottom:60px;
-}
+  .header-text h3 {
+    font-size: 2.7rem;
+    width: 70%;
+    font-weight: 700;
+    color: #1c2d43;
+    margin: 0 0 10px 0;
+  }
 
-.header h3{
-  font-size: 3rem;
-  font-weight:700;
-  color:#1c2d43;
-  margin: 0;
+  .slider-arrows {
+    display: flex;
+    gap: 15px;
+  }
 
-  padding-top: 5rem;
-  line-height:1.2;
+  .arrow {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s;
+    padding: 10px;
+  }
 
-  width: 50%;
-}
+  .arrow.left {
+    transform: rotate(180deg);
+  }
 
-.header p{
-  font-size: 1rem;
-  color:#1c2d43ca;
-}
+  .slider {
+    display: flex;
+    gap: 30px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-left: calc((100vw - 1370px) / 2);
+    padding-right: 40px;
+  }
 
-/* GRID CARDS */
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
 
-.slider{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:30px;
-}
+  .card-slider {
+    flex: 0 0 320px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: transform 0.25s ease;
+  }
 
-/* CARD */
+  .card-slider:hover {
+    transform: translateY(-5px);
+  }
 
-.card-slider{
-  background:#f9fafb;
-  border-radius:12px;
-  overflow:hidden;
-  padding:20px;
+  .card-slider-img {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
 
-  transition:transform .25s ease, box-shadow .25s ease;
-}
+  .card-slider-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
 
-/* hover suave como kadence */
+  .card-slider-content {
+    padding: 24px;
+  }
+  .card-slider-content p:first-child {
+    font-size: 11px;
+    font-weight: 800;
+    color: #94a3b8;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .card-slider-content h4 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 12px;
+  }
+  .card-slider-content p:last-child {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+  }
 
-.card-slider:hover {
-  transform:translateY(-4px);
-  box-shadow:0 12px 30px rgba(0,0,0,.08);
-}
-
-/* imagen */
-
-.card-slider-img img{
-  width:100%;
-  border-radius:8px;
-  margin-bottom:20px;
-}
-
-/* contenido */
-
-.card-slider-content p:first-child{
-  font-size:12px;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:#6b7280;
-  margin-bottom:10px;
-}
-
-.card-slider-content h4{
-  font-size:22px;
-  font-weight:700;
-  margin-bottom:12px;
-  color:#111827;
-}
-
-.card-slider-content p:last-child{
-  font-size:15px;
-  color:#6b7280;
-  line-height:1.6;
-}
+  @media (max-width: 1240px) {
+    .slider {
+      padding-left: 20px;
+    }
+  }
 </style>
+
+<script>
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  const slider = document.getElementById("slider");
+
+  if (nextBtn && prevBtn && slider) {
+    const scrollAmount = 350;
+    nextBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+    prevBtn.addEventListener("click", () => {
+      slider.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+  }
+</script>
