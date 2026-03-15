@@ -260,6 +260,56 @@ import Drafts from "../components/Drafts.astro";
   </div>
 </section>
 
+<section class="second-testimonial-section">
+  <div class="container">
+
+    <div class="blue-container">
+
+      <div class="left-content">
+        <div class="left-quote">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 8 8"
+            fill="currentColor"
+            color="#0273e7"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true">
+            <path
+              d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z"
+              transform="translate(0 1)"></path>
+          </svg>
+
+        </div>
+
+        <div class="left-title">
+          <h4>Kadence is incredibly versatile, It’s really easy to build any type of website you can imagine.</h4>
+        </div>
+
+        <div class="left-stars">
+          <p>★★★★★</p>
+        </div>
+      </div>
+
+    <div class="right-content">
+
+      <div class="right-photo">
+        <img src="https://www.kadencewp.com/wp-content/uploads/2024/07/shawn-hekseth-wp101.jpeg" style="border-radius: 50%;" />
+      </div>
+
+      <div class="right-name">
+        <p>Shawn Hesketh – WP101</p>
+      </div>
+
+      <div class="right-text">
+        <em>At WP101, we recommend Kadence because it is highly <br> optimized for performance and easy to customize.</em>
+      </div>
+
+    </div>
+    </div>
+  </div>
+</section>
+
 <style>
   .stars {
     color: #fab200;
@@ -508,6 +558,80 @@ import Drafts from "../components/Drafts.astro";
       padding-left: 20px;
     }
   }
+  
+  /* estilos de la persona */
+  .blue-container{
+    background-color: #1a202c;
+    border-radius: 20px;
+    color: #f6f6f6;
+    display: flex;
+  }
+
+  .left-content{
+    display: flex;
+    flex-direction: column;
+
+    padding:80px 40px;
+
+    padding-top: 5rem;
+    width: 50%;
+  }
+
+  .right-content{
+    display: flex;
+    flex-direction: column;
+
+    padding:80px 40px;
+    width: 50%;
+
+    text-align: center;
+  }
+ 
+  .left-title h4{
+    margin: 0 auto;
+    font-size: 2.4rem;
+    width: 60%;
+
+    margin-bottom:20px;
+  }
+
+  .left-quote{
+    width:60%;
+    margin: 0 auto;
+
+    margin-bottom:20px;
+  }
+
+  .left-stars p{
+    font-size: 2rem;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .right-photo img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  object-fit:cover;
+
+  margin-bottom:25px;
+}
+
+.right-name p{
+  font-size:1.3rem;
+  font-weight:700;
+}
+
+.right-text{
+  max-width:700px;
+  margin:auto;
+}
+
+.right-text em{
+  font-size:1.2rem;
+  line-height:1.6;
+  color:#e5e7eb;
+}
 </style>
 
 <script>
