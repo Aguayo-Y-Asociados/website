@@ -1,23 +1,23 @@
 ---
-import Navbar from "../components/navbar/Navbar.astro"
-import GradientPatternWrapper from "../components/ui/GradientPatternWrapper.astro"
-import Hero from "../components/Hero.astro"
-import HeroFooter from "../components/HeroFooter.astro"
-import "../styles/global.css"
+import Navbar from "../components/navbar/Navbar.astro";
+import GradientPatternWrapper from "../components/ui/GradientPatternWrapper.astro";
+import Hero from "../components/Hero.astro";
+import HeroFooter from "../components/HeroFooter.astro";
+import "../styles/global.css";
 ---
 
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Kadence Clone</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kadence Clone</title>
+  </head>
 
-    <body>
-        <GradientPatternWrapper height="70%">
-          <Navbar/>
-          <Hero/>
-          <slot/>
-        </GradientPatternWrapper>
-        <HeroFooter/>
-    </body>
+  <body>
+    <GradientPatternWrapper height="70%">
+      <Navbar />
+      <Hero />
+      <slot />
+    </GradientPatternWrapper>
+    <HeroFooter />
+  </body>
 </html>
