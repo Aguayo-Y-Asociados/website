@@ -1,0 +1,244 @@
+---
+import question from "../assets/ecommerce_starters.webp";
+---
+
+<div class="container">
+  <div class="layout-grid">
+    
+    <div class="accordion-side">
+
+    <h5>Kadence is the Right Choice for You</h5>
+      <div class="accordion">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <h3>eCommerce</h3>
+            <span class="icon"></span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-inner">
+              <p>
+                Kadence Theme has built-in woocommerce features like a dynamic cart
+                in the header. Kadence Blocks and Kadence Shop Kit help you
+                customize WooCommerce to your audience for better conversions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Online Courses</h3>
+            <span class="icon"></span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-inner">
+              <p>
+                Create beautiful learning experiences with deep integrations for LMS
+                platforms like LearnDash and LifterLMS.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Business Websites</h3>
+            <span class="icon"></span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-inner">
+              <p>
+                Professional layouts designed to convert visitors into customers for
+                any business niche.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Non-Profit & Fundraising</h3>
+            <span class="icon"></span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-inner">
+              <p>
+                Kadence is perfect for non-profit sites, with lots of beautifully designed starter sites you can easily get started. Plus Kadence works hand in hand with all the plugins you will need to create events and receive donations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>Blogs & Podcasts</h3>
+            <span class="icon"></span>
+          </div>
+          <div class="accordion-content">
+            <div class="content-inner">
+              <p>
+Build beautiful blog sites or podcast sites with Kadence and monetize your site with a membership plugin. Use the power of dynamic content and restricted content to create amazing membership sites.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="image-side">
+      <img src={question.src} alt="Ecommerce Starters Preview" />
+    </div>
+
+  </div>
+</div>
+
+<style>
+.layout-grid {
+  display: flex;
+  align-items: flex-start; /* Alinea el acordeón al inicio */
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1350px;
+  margin: 8rem auto;
+}
+
+.accordion-side {
+  flex: 1;
+}
+
+.accordion-side h5{
+  font-size: 3.4rem;
+  width: 90%;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-side img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+  /* Sombra suave para darle profundidad */
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.1));
+}
+
+/* 2. Estilos del Acordeón */
+.accordion {
+  width: 100%;
+  /* border-top: 1px solid #e5e7eb; /* Línea superior opcional */ */
+}
+
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Encabezado */
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2d3748; 
+  transition: color 0.3s ease;
+}
+
+/* Icono Flecha */
+.icon {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #2d3748;
+  border-bottom: 2px solid #2d3748;
+  transform: rotate(45deg);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 10px;
+}
+
+/* 3. El Truco de la Animación (Grid) */
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr; /* Cerrado: altura 0 */
+  transition: grid-template-rows 0.3s ease-out;
+  overflow: hidden;
+}
+
+.content-inner {
+  min-height: 0;
+}
+
+.accordion-content p {
+  margin: 0;
+  padding-bottom: 24px;
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* 4. Estados Activos */
+.accordion-item.active .accordion-content {
+  grid-template-rows: 1fr; /* Abierto: altura automática */
+}
+
+.accordion-item.active .icon {
+  transform: rotate(-135deg); /* Gira la flecha hacia arriba */
+  border-color: #000;
+}
+
+.accordion-item.active .accordion-header h3 {
+  color: #000;
+}
+
+/* 5. Responsive (Mobile) */
+@media (max-width: 900px) {
+  .layout-grid {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .accordion-header {
+    padding: 20px 0;
+  }
+  
+  .image-side {
+    order: -1; /* Mueve la imagen arriba en móviles */
+  }
+}
+</style>
+
+<script>
+  document.querySelectorAll(".accordion-header").forEach((header) => {
+    header.addEventListener("click", () => {
+      const parent = header.parentElement;
+      // Si ya está activo, lo cerramos 
+      if (parent.classList.contains("active")) {
+        parent.classList.remove("active");
+      } else {
+        // Cerramos todos los demás items
+        document.querySelectorAll(".accordion-item").forEach((item) => {
+          item.classList.remove("active");
+        });
+        // Abrimos el actual
+        parent.classList.add("active");
+      }
+    });
+  });
+</script>

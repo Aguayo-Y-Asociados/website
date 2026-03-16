@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Drafts from "../components/Drafts.astro";
+import Questions from "../components/Questions.astro";
 ---
 
 <BaseLayout />
@@ -315,6 +316,10 @@ import Drafts from "../components/Drafts.astro";
   </div>
 </section>
 
+<section class="questions-section">
+  <Questions />
+</section>
+
 <style>
   .stars {
     color: #fab200;
@@ -589,7 +594,7 @@ import Drafts from "../components/Drafts.astro";
     text-align: center;
     /* background-color: red; */
     padding-top: 4.8rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     padding-right: 3rem;
   }
 
@@ -637,6 +642,12 @@ import Drafts from "../components/Drafts.astro";
     font-size: 1.2rem;
     line-height: 1.6;
     color: #e5e7eb;
+  }
+
+  /* container dividido en 2 del testimonio */
+  .second-testimonial-section {
+    background: linear-gradient(to bottom, #eeeff6 50%, white 50%);
+    width: 100%;
   }
 </style>
 
