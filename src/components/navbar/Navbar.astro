@@ -1,83 +1,99 @@
 ---
 
 ---
+
 <nav class="navbar">
-    <div class="container">
+  <div class="container">
+    <a href="/" class="logo">
+      <img
+        src="/src/assets/aguayoLogoWhite.png"
+        alt="AguayosLogoA"
+        class="logoA"
+      />
+      <img
+        src="/src/assets/logoTextWhite.png"
+        alt="aguayoLogo"
+        class="logoTexto"
+      />
+    </a>
 
-        <a href="/" class="logo">
-            <img src="/src/assets/logo.webp" alt="kadence" />
-        </a>
+    <ul class="menu">
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/products">Productos</a></li>
+      <li><a href="/kadence-ai">Nosotros</a></li>
+      <li><a href="/starter-templates">Starter Templates</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/support">Support</a></li>
+    </ul>
 
-        <ul class="menu">
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/kadence-ai">Kadence AI</a></li>
-            <li><a href="/starter-templates">Starter Templates</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/support">Support</a></li>
-        </ul>
-
-        <div class="actions">
-            <a href="/account" class="login">Account</a>
-            <a href="/get-started" class="btn">Get Started</a>
-        </div>
-
+    <div class="actions">
+      <a href="/account" class="login">Account</a>
+      <a href="/get-started" class="btn">Get Started</a>
     </div>
+  </div>
 </nav>
 
 <style>
-.navbar{
-  padding:26px 0;
-  background: transparent;
-}
+  .logoA {
+    padding-left: 7px;
+  }
 
-.container{
-  max-width:1350px; /* aqui podria ser el 100% */
-  margin:auto;
+  .logoTexto {
+    padding-left: 1rem;
+  }
 
-  display:grid;
-  grid-template-columns: auto 1fr auto;
-  align-items:center;
-}
+  .navbar {
+    padding: 26px 0;
+    background: transparent;
+  }
 
-.logo img{
-  max-width:240px;
-}
+  .container {
+    max-width: 1350px; /* aqui podria ser el 100% */
+    margin: auto;
 
-.menu{
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  list-style:none;
-  margin:0;
-  padding:0;
-}
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+  }
 
-.menu a{
-  text-decoration:none;
-  color:#fff;
-  font-weight:400;
-  font-size:97%;
-}
+  .logo img {
+    max-width: 240px;
+  }
 
-.actions{
-  display:flex;
-  justify-content:flex-end;
-  gap:20px;
-  align-items:center;
-}
+  .menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.login{
-  text-decoration:none;
-  color: #fff;
-  size: 97%;
-}
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 97%;
+  }
 
-.btn{
-  background:#000000;
-  color:white;
-  padding:10px 25px;
-  border-radius:3px;
-  text-decoration:none;
-}
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .login {
+    text-decoration: none;
+    color: #fff;
+    size: 97%;
+  }
+
+  .btn {
+    background: #000000;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 3px;
+    text-decoration: none;
+  }
 </style>
