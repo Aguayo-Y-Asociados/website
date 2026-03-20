@@ -1,5 +1,5 @@
 ---
-import laptop from "../assets/laptop.webp";
+import laptop from "../assets/laptopNueva.png";
 ---
 
 <section>
@@ -11,8 +11,8 @@ import laptop from "../assets/laptop.webp";
         con expertos en seguros
       </h1>
       <p>
-            En Aguayo & Asociados tenemos el <strong>seguro ideal</strong> que necesitas para cuidar tu patrimonio,
-            tu familia y tu tranquilidad.
+        En Aguayo & Asociados tenemos el <strong>seguro ideal</strong> que necesitas
+        para cuidar tu patrimonio, tu familia y tu tranquilidad.
       </p>
       <div class="buttons">
         <a href="#" class="btn-primary">Get Started</a>
@@ -22,7 +22,13 @@ import laptop from "../assets/laptop.webp";
 
     <!-- imagenes -->
     <div class="hero-images">
-      <img src={laptop.src} class="laptop" alt="editor" />
+      <div class="mockup">
+        <img src={laptop.src} class="laptop" alt="editor" />
+
+        <video class="screen" autoplay loop muted playsinline>
+          <source src="/VideoLaptop2.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
   </div>
 </section>
@@ -37,7 +43,6 @@ import laptop from "../assets/laptop.webp";
   .container {
     max-width: 1350px;
     margin: auto;
-
     display: grid;
     grid-template-columns: 4fr 5fr;
     align-items: center;
@@ -64,7 +69,6 @@ import laptop from "../assets/laptop.webp";
   }
 
   /* btns*/
-
   .buttons {
     display: flex;
     gap: 16px;
@@ -88,27 +92,39 @@ import laptop from "../assets/laptop.webp";
   }
 
   /* IMÁGENES */
-
   .hero-images {
     position: relative;
-  }
-
-  .laptop {
     margin-top: 3rem;
     padding-left: 5rem;
+  }
+
+  .mockup {
+    position: relative;
     width: 135%;
   }
 
-  /* .box{ */
-  /*   margin-top: 5rem; */
-  /* } */
-
-  .phone {
-    position: absolute;
-    width: 290px;
-    bottom: -120px;
-    left: 310px;
+  .laptop {
+    width: 100%;
+    display: block;
   }
+
+  .screen {
+    position: absolute;
+    top: 6.2%;
+    left: 2%;
+    width: 96%;
+    height: 91.5%;
+    object-fit: cover;
+    border: none;
+    pointer-events: none;
+  }
+
+  /* .phone { */
+  /*   position: absolute; */
+  /*   width: 290px; */
+  /*   bottom: -120px; */
+  /*   left: 310px; */
+  /* } */
 
   /* todo esto tambien es del style pattern*/
   /* pattern */
