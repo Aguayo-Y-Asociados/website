@@ -1,294 +1,642 @@
 ---
-import draft1 from "../assets/drafts/draft1.webp";
-import draft2 from "../assets/drafts/draft2.jpg";
-import draft3 from "../assets/drafts/draft3.jpg";
-import draft4 from "../assets/drafts/draft4.jpg";
-import draft5 from "../assets/drafts/draft5.jpg";
+
 ---
 
-<div class="container-blue">
-  <div class="container boxes">
-    <div class="feature">
-      <p>Introducing <span class="bluesito">Kadence AI ✦.</span></p>
-    </div>
-    <div class="container boxes">
-      <h3 class="title-draft">Next level site creation with AI</h3>
-    </div>
-  </div>
-  <div class="container-images">
-    <div class="space">
-      <img src={draft1.src} class="laptop" alt="editor" />
+<div class="productos-section">
+  <div class="productos-container">
+    <div class="productos-header">
+      <span class="productos-badge">Nuestros Productos</span>
+      <h2>Soluciones de protección para cada etapa de tu vida</h2>
+      <p>
+        En Aguayo & Asociados ofrecemos una amplia gama de seguros diseñados
+        para proteger lo que más importa: tu familia, tu salud, tu patrimonio y
+        tu futuro.
+      </p>
     </div>
 
-    <img src={draft2.src} class="laptop" alt="editor" />
-    <div class="space">
-      <img src={draft3.src} class="laptop" alt="editor" />
-    </div>
-    <img src={draft4.src} class="laptop" alt="editor" />
-    <div class="space">
-      <img src={draft5.src} class="laptop" alt="editor" />
-    </div>
-  </div>
+    <div class="carousel-wrapper">
+      <button
+        class="carousel-arrow carousel-arrow-left"
+        id="productos-prev"
+        aria-label="Anterior"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
 
-  <div class="container">
-    <div class="blocks">
-      <div class="bloque-1">
-        <h4>First draft in minutes</h4>
-        <p>
-          Create stunning websites effortslessly with a streamlined process
-          powered by Kadence AI
-        </p>
-
-        <div class="button-container">
-          <div class="boton">
-            <a
-              class="kb-button kt-button button kb-btn547444_1e7786-06 kt-btn-size-standard kt-btn-width-type-auto kb-btn-global-inherit kt-btn-has-text-false kt-btn-has-svg-true ktblocksvideopop wp-block-button__link wp-block-kadence-singlebtn kb-video-pop-1"
-              aria-label="Watch a video on how AI works"
-              href="https://www.youtube.com/watch?v=JxQd4jYQ96o"
-              rel="noopener"
-              role="button"
-              aria-haspopup="dialog"
-              ><span
-                class="kb-svg-icon-wrap kb-svg-icon-fe_play kt-btn-icon-side-right"
-                ><svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  ><polygon points="5 3 19 12 5 21 5 3"></polygon></svg
-                ></span
-              ></a
+      <div class="productos-carousel" id="productos-carousel">
+        <!-- Seguro de Vida -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+              ></path>
+            </svg>
           </div>
-          <p class="watch">← Watch how it works</p>
+          <h3>Seguro de Vida</h3>
+          <p>
+            Protección económica para tus seres queridos en caso de
+            fallecimiento. Algunos planes incluyen ahorro e inversión para
+            cumplir metas como la educación de tus hijos o tu retiro.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
         </div>
 
-        <div class="bloque-3">
-          <p>Take Kadence AI for a test drive →</p>
+        <!-- Gastos Médicos Mayores -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+          <h3>Gastos Médicos Mayores</h3>
+          <p>
+            Acceso a los mejores especialistas y hospitales sin poner en riesgo
+            tus finanzas. Enfócate en tu recuperación mientras el seguro cubre
+            los gastos fuertes.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
+        </div>
+
+        <!-- Plan Personal de Retiro -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+              ></path>
+            </svg>
+          </div>
+          <h3>Plan Personal de Retiro</h3>
+          <p>
+            Construye tu fondo de retiro con rendimientos atractivos y
+            beneficios fiscales. Aportaciones periódicas que garantizan
+            estabilidad financiera cuando más lo necesites.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
+        </div>
+
+        <!-- Seguro Educativo -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+          <h3>Seguro Educativo</h3>
+          <p>
+            Asegura el futuro académico de tus hijos desde hoy. Combina ahorro,
+            protección y beneficios fiscales para que ningún imprevisto detenga
+            sus sueños.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
+        </div>
+
+        <!-- Seguro de Auto -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3>Seguro de Auto</h3>
+          <p>
+            Cobertura completa, asesoría personalizada y opciones adaptadas al
+            tipo de vehículo, uso y presupuesto en Sinaloa y en todo México. No
+            solo aseguramos tu carro, aseguramos tu tranquilidad.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
+        </div>
+
+        <!-- Seguro de Casa -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+          </div>
+          <h3>Seguro de Casa</h3>
+          <p>
+            Blinda tu patrimonio ante catástrofes e imprevistos diarios.
+            Incendios, huracanes, sismos y más — tu inversión y tu familia están
+            cubiertas.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
+        </div>
+
+        <!-- Seguro Negocio Protegido -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3>Negocio Protegido PYMES</h3>
+          <p>
+            Garantiza la continuidad de tu empresa. Protege tu negocio de daños
+            físicos, robo y el riesgo de cerrar por falta de efectivo mientras
+            te recuperas de un imprevisto.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
+        </div>
+
+        <!-- Seguro Hombre Clave -->
+        <div class="producto-card">
+          <div class="producto-icon">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3>Seguro Hombre Clave</h3>
+          <p>
+            Blindaje estratégico y fiscal 100% deducible. Protege la
+            supervivencia y rentabilidad de tu empresa ante la ausencia de un
+            directivo, socio o colaborador indispensable.
+          </p>
+          <a href="/productos" class="producto-link">Conocer más →</a>
         </div>
       </div>
 
-      <div class="bloque-2">
-        <div class="star">
-          <span class="kb-svg-icon-wrap kb-svg-icon-kb-ai-kadence-ai"
-            ><svg
-              viewBox="-12 0 1024 999"
-              preserveAspectRatio="xMinYMin meet"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              ><path
-                d="M416.019 619.22l52.124-113.364 113.339-52.099-113.339-52.124-52.124-113.339-52.124 113.339-113.339 52.124 113.339 52.099 52.124 113.364zM416.019 770.098l-98.853-217.488-217.513-98.853 217.513-98.878 98.853-217.488 98.853 217.488 217.513 98.878-217.513 98.853-98.853 217.488zM773.994 886.659l-48.902-109.268-109.268-48.902 109.268-49.951 48.902-108.244 49.951 108.244 108.244 49.951-108.244 48.902-49.951 109.268z"
-              ></path></svg
-            ></span
-          >
-        </div>
-        <h4>How it works</h4>
-        <ol>
-          <li>
-            Give the AI website builder some basic info about your business.
-          </li>
-          <li>
-            Sit back and relax as the tool populates various website layouts
-            with AI-generated text and open-source images suitable for your
-            project.
-          </li>
-          <li>Customize the Starter Template however you'd like!</li>
-        </ol>
-      </div>
+      <button
+        class="carousel-arrow carousel-arrow-right"
+        id="productos-next"
+        aria-label="Siguiente"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Dots indicator -->
+    <div class="carousel-dots" id="carousel-dots"></div>
+
+    <div class="productos-cta">
+      <p>
+        ¿No sabes qué seguro necesitas? Nosotros te asesoramos sin compromiso.
+      </p>
+      <a href="/cotiza" class="productos-btn">Quiero una asesoría gratuita</a>
     </div>
   </div>
 </div>
 
 <style>
-  .container-blue {
+  .productos-section {
     background-color: #1c202b;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    padding-top: 80px;
+    overflow: hidden;
   }
 
-  .feature {
-    position: relative;
-    width: 18%;
-    padding: 13px 1px;
-    background-color: #333741;
+  .productos-container {
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .productos-header {
     text-align: center;
-    top: 7em;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #454851;
+    max-width: 800px;
+    margin: 0 auto 80px auto;
   }
 
-  .feature p {
-    font-size: 1.1rem;
-    padding: 0;
-    margin: 0;
-  }
-
-  .title-draft {
-    font-size: 4rem;
-    color: #f6f6f6;
-    width: 40%;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 10rem;
-  }
-
-  .bluesito {
+  .productos-badge {
+    display: inline-block;
+    background: rgba(58, 113, 222, 0.15);
     color: #639bef;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(99, 155, 239, 0.25);
   }
 
-  p {
-    color: white;
+  .productos-header h2 {
+    font-size: 3.2rem;
+    color: #f6f6f6;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
   }
 
-  /* container de las imagenes  */
-  .container-images {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 7rem;
-
-    /* hace que sobresalgan */
-    width: 130%;
-    transform: translateX(-10%);
-
-    /* animación suave */
-    transition: transform 0.15s linear;
-    will-change: transform;
-  }
-
-  .container-images img {
-    width: 520px;
-    flex-shrink: 0;
-    border-radius: 8px;
-  }
-
-  .space {
-    /* margin-top: 3.5rem; */
-  }
-
-  /* ahora la seccion de abajo de las imagenes */
-  .blocks {
-    display: flex;
-    /* background-color: red; */
-    margin-top: 8rem;
-    gap: 2rem;
-    margin-bottom: 7rem;
-  }
-
-  .bloque-1 {
-    background-color: #303747;
-    border-radius: 8px;
-    width: 61%;
-    height: 430px;
-    /* flex-direction: column; */
-  }
-
-  .bloque-2 {
-    background-color: #3a71de;
-    border-radius: 8px;
-    width: 36%;
-  }
-
-  .bloque-1 h4 {
+  .productos-header p {
+    font-size: 1.15rem;
+    color: #a0a8b8;
+    line-height: 1.7;
     margin: 0;
-    padding: 3rem;
-    font-size: 3rem;
-    color: #f6f6f6;
   }
 
-  .bloque-2 h4 {
-    font-size: 2.2rem;
-    padding-left: 3rem;
-    color: #f6f6f6;
-    padding-top: 2rem;
-  }
-
-  .bloque-1 p {
-    margin: 0;
-    font-size: 1.8rem;
-    padding-left: 3rem;
-    color: #f6f6f6;
-    line-height: 1.8;
-  }
-
-  .star {
+  /* ===== CAROUSEL ===== */
+  .carousel-wrapper {
     position: relative;
-    left: 3rem;
-    top: 3rem;
-    color: white;
-    width: 10%;
-    border-radius: 100px;
-    padding: 1rem;
-    border: 1px solid white;
-  }
-
-  .watch {
-    color: #d0d6e3;
-    font-size: 1.5rem;
-    margin-left: 1rem;
-  }
-
-  .bloque-3 {
-    border: 1px solid #3f4658;
-    border-radius: 8px;
-    margin-top: 6.7rem;
-    padding: 2.5rem 3rem;
-  }
-
-  .bloque-3 p {
-    margin: 0;
-    font-size: 1.7rem;
-    color: #f6f6f6;
-  }
-
-  .bloque-2 ol {
-    margin-top: 2rem;
-    padding-left: 4rem;
-    padding-right: 3rem;
-    color: #f6f6f6;
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-
-  .bloque-2 li {
-    margin-bottom: 1.5rem;
-  }
-
-  .button-container {
     display: flex;
     align-items: center;
-    margin-top: 2rem;
-    margin-left: 3rem;
+    gap: 16px;
   }
 
-  .boton {
-    width: 5%;
-    padding: 1rem;
-    border: 1px solid white;
-    border-radius: 100px;
-    background-color: #1f232c;
+  .productos-carousel {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 10px 0;
   }
 
-  .boton a {
+  .productos-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .producto-card {
+    background: #252a36;
+    border-radius: 14px;
+    padding: 36px 28px;
+    border: 1px solid #2e3445;
+    transition:
+      transform 0.3s ease,
+      border-color 0.3s ease,
+      box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc(25% - 18px);
+    min-width: 280px;
+  }
+
+  .producto-card:hover {
+    transform: translateY(-6px);
+    border-color: #3a71de;
+    box-shadow: 0 12px 40px rgba(58, 113, 222, 0.15);
+  }
+
+  .producto-icon {
+    width: 56px;
+    height: 56px;
+    background: rgba(58, 113, 222, 0.12);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #639bef;
+    margin-bottom: 24px;
+  }
+
+  .producto-card h3 {
+    font-size: 1.25rem;
+    color: #f6f6f6;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .producto-card p {
+    font-size: 0.92rem;
+    color: #a0a8b8;
+    line-height: 1.65;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .producto-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #639bef;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .producto-link:hover {
+    color: #8bb8ff;
+  }
+
+  /* ===== ARROWS ===== */
+  .carousel-arrow {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid #3a3f4e;
+    background: #252a36;
+    color: #a0a8b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease,
+      color 0.25s ease,
+      opacity 0.25s ease;
+    z-index: 2;
+  }
+
+  .carousel-arrow:hover {
+    background: #3a71de;
+    border-color: #3a71de;
+    color: #fff;
+  }
+
+  .carousel-arrow.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  /* ===== CTA ===== */
+  .productos-cta {
+    max-width: 1270px;
+    text-align: center;
+    padding: 48px;
+    background: #252a36;
+    border-radius: 14px;
+    border: 1px solid #2e3445;
+    margin: 80px auto;
+  }
+
+  .productos-cta p {
+    font-size: 1.3rem;
+    color: #d0d6e3;
+    margin: 0 0 28px 0;
+  }
+
+  .productos-btn {
+    display: inline-block;
+    background: #3a71de;
     color: white;
+    padding: 16px 36px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      background 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .productos-btn:hover {
+    background: #2d5fc4;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 900px) {
+    .producto-card {
+      flex: 0 0 calc(50% - 12px);
+    }
+
+    .carousel-arrow {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .producto-card {
+      flex: 0 0 85%;
+    }
+
+    .productos-header h2 {
+      font-size: 2.2rem;
+    }
+  }
+</style>
+
+<!-- GLOBAL styles for dynamically created dots (Astro scoped styles don't apply to JS-created elements) -->
+<style is:global>
+  .carousel-dots {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: 40px !important;
   }
 </style>
 
 <script>
-  //Animacion del desplazamiento para el draft
-  const images = document.querySelector(".container-images");
-  window.addEventListener("scroll", () => {
-    const scroll = window.scrollY;
-    let movement = scroll * 0.06;
-    movement = Math.max(-120, Math.min(120, movement));
-    images.style.transform = `translateX(calc(-10% - ${movement}px))`;
-  });
+  const carousel = document.getElementById("productos-carousel");
+  const prevBtn = document.getElementById("productos-prev");
+  const nextBtn = document.getElementById("productos-next");
+  const dotsContainer = document.getElementById("carousel-dots");
+
+  if (carousel && prevBtn && nextBtn && dotsContainer) {
+    const cards = carousel.querySelectorAll(".producto-card");
+    const totalCards = cards.length;
+
+    function getVisibleCount() {
+      const cardWidth = cards[0].offsetWidth + 24;
+      return Math.round(carousel.offsetWidth / cardWidth);
+    }
+
+    function getTotalPages() {
+      return Math.max(1, totalCards - getVisibleCount() + 1);
+    }
+
+    function styleDot(dot, isActive) {
+      dot.style.width = isActive ? "12px" : "10px";
+      dot.style.height = isActive ? "12px" : "10px";
+      dot.style.borderRadius = "50%";
+      dot.style.background = isActive ? "#639bef" : "#3a3f4e";
+      dot.style.border = "none";
+      dot.style.outline = "none";
+      dot.style.padding = "0";
+      dot.style.margin = "0";
+      dot.style.cursor = "pointer";
+      dot.style.display = "inline-block";
+      dot.style.transition =
+        "background 0.3s ease, width 0.3s ease, height 0.3s ease";
+      dot.style.WebkitAppearance = "none";
+      dot.style.MozAppearance = "none";
+      dot.style.appearance = "none";
+      dot.style.flexShrink = "0";
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = "";
+      const pages = getTotalPages();
+      for (let i = 0; i < pages; i++) {
+        const dot = document.createElement("div");
+        dot.setAttribute("role", "button");
+        dot.setAttribute("aria-label", `Ir a producto ${i + 1}`);
+        dot.dataset.index = String(i);
+        styleDot(dot, i === 0);
+        dot.addEventListener("click", () => {
+          const cardWidth = cards[0].offsetWidth + 24;
+          carousel.scrollTo({ left: cardWidth * i, behavior: "smooth" });
+        });
+        dot.addEventListener("mouseenter", () => {
+          if (dot.dataset.active !== "true") {
+            dot.style.background = "#5a86d6";
+          }
+        });
+        dot.addEventListener("mouseleave", () => {
+          if (dot.dataset.active !== "true") {
+            dot.style.background = "#3a3f4e";
+          }
+        });
+        dotsContainer.appendChild(dot);
+      }
+      updateDots();
+    }
+
+    function updateDots() {
+      const cardWidth = cards[0].offsetWidth + 24;
+      const currentIndex = Math.round(carousel.scrollLeft / cardWidth);
+      const dots = dotsContainer.querySelectorAll("[role='button']");
+      dots.forEach((dot, i) => {
+        const isActive = i === currentIndex;
+        dot.dataset.active = String(isActive);
+        styleDot(dot, isActive);
+      });
+
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+      prevBtn.classList.toggle("disabled", carousel.scrollLeft <= 5);
+      nextBtn.classList.toggle(
+        "disabled",
+        carousel.scrollLeft >= maxScroll - 5,
+      );
+    }
+
+    const scrollAmount = () => cards[0].offsetWidth + 24;
+
+    nextBtn.addEventListener("click", () => {
+      carousel.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+
+    prevBtn.addEventListener("click", () => {
+      carousel.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+
+    carousel.addEventListener("scroll", updateDots);
+    window.addEventListener("resize", buildDots);
+    buildDots();
+
+    let isDown = false;
+    let startX = 0;
+    let scrollLeftStart = 0;
+
+    carousel.addEventListener("mousedown", (e) => {
+      isDown = true;
+      carousel.style.cursor = "grabbing";
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeftStart = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener("mouseleave", () => {
+      isDown = false;
+      carousel.style.cursor = "grab";
+    });
+
+    carousel.addEventListener("mouseup", () => {
+      isDown = false;
+      carousel.style.cursor = "grab";
+    });
+
+    carousel.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      carousel.scrollLeft = scrollLeftStart - walk;
+    });
+
+    carousel.style.cursor = "grab";
+  }
 </script>
