@@ -1,1 +1,139 @@
-<!-- here goes the code for the carousel -->
+---
+import axa from "../assets/carousel/axa.png";
+import gnp from "../assets/carousel/gnp.png";
+import mapfre from "../assets/carousel/mapfre.png";
+import metlife from "../assets/carousel/metlife.png";
+import qualitas from "../assets/carousel/qualitas.png";
+
+const logos = [
+  { src: axa.src, alt: "AXA Seguros" },
+  { src: gnp.src, alt: "GNP Seguros" },
+  { src: mapfre.src, alt: "MAPFRE" },
+  { src: metlife.src, alt: "MetLife" },
+  { src: qualitas.src, alt: "Quálitas" },
+];
+---
+
+<div class="carousel-section">
+  <div class="logos-section">
+    <h2 class="logos-title">Trabajamos con diversas aseguradoras</h2>
+
+    <div class="logos-overflow">
+      <div class="logos-track">
+        {
+          logos.map((logo) => (
+            <div class="logo-item">
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))
+        }
+        {
+          logos.map((logo) => (
+            <div class="logo-item">
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))
+        }
+        {
+          logos.map((logo) => (
+            <div class="logo-item">
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))
+        }
+        {
+          logos.map((logo) => (
+            <div class="logo-item">
+              <img src={logo.src} alt={logo.alt} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .logos-section {
+    background: #f0f1f5;
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .logos-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #1c2d43;
+    margin: 0 0 60px 0;
+    letter-spacing: -0.3px;
+  }
+
+  .logos-overflow {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 10%,
+      black 90%,
+      transparent 100%
+    );
+  }
+
+  .logos-track {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: max-content;
+    animation: scroll-logos 25s linear infinite;
+  }
+
+  .logo-item {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+  }
+
+  .logo-item img {
+    height: 70px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition:
+      filter 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .logo-item img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  @keyframes scroll-logos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .carousel-section {
+    margin-bottom: 80px;
+  }
+</style>
