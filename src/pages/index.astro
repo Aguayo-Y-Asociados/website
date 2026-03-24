@@ -121,60 +121,92 @@ import Whatsapp from "../components/Whatsapp.astro";
 
 <section class="gris">
   <div class="container">
-    <div class="testimonial-container">
-      <div class="comilla-1">
-        <svg
-          width="120"
-          height="120"
-          viewBox="0 0 8 8"
-          fill="currentColor"
-          color="#f1f3f6"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M3 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1zm5 0c-1.65 0-3 1.35-3 3v3h3v-3h-2c0-1.11.89-2 2-2v-1z"
-            transform="translate(0 1)"></path></svg
-        >
-      </div>
+    <div class="gris-header">
+      <span class="gris-badge">Dato Curioso</span>
+      <h2 class="gris-title">Los mejores del mundo también se protegen</h2>
+      <p class="gris-subtitle">
+        Cuando algo es verdaderamente valioso, protegerlo no es un lujo — es una
+        decisión inteligente.
+      </p>
+    </div>
 
-      <div class="testimonial-card comilla-2">
-        <div class="testimonial-image">
-          <img src="/src/assets/client-review.jpg" alt="client" />
+    <div class="facts-grid">
+      <div class="fact-card">
+        <div class="fact-quote">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 8.5C10 5.46 7.54 3 4.5 3H3v2h1.5C6.43 5 8 6.57 8 8.5V9H3v6h6V9h1V8.5zM21 8.5C21 5.46 18.54 3 15.5 3H14v2h1.5C17.43 5 19 6.57 19 8.5V9h-5v6h6V9h1V8.5z"
+              fill="#0273e7"></path>
+          </svg>
         </div>
+        <p class="fact-text">
+          <strong>Cristiano Ronaldo</strong> aseguró sus piernas por más de <strong
+            >100 millones de euros</strong
+          >. Para él, proteger su mayor herramienta de trabajo no fue vanidad —
+          fue visión.
+        </p>
+        <p class="fact-reflection">
+          Porque cuando algo es valioso, lo proteges.
+        </p>
+      </div>
 
-        <div class="testimonial-content">
-          <div class="stars">★★★★★</div>
-          <p class="testimonial-text">
-            Kadence Blocks and Kadence Theme Pro have completely changed my
-            business and the way I design websites. I’ve tried several page
-            builders and block-based builders, and Kadence, by far, has the
-            easiest user interface and functionality. I can easily build and
-            style about 99% of web pages without any custom CSS.
-          </p>
-
-          <div class="author">
-            <h4>Lissete Harrington</h4>
-            <span>Mila Design Co.</span>
-          </div>
+      <div class="fact-card">
+        <div class="fact-quote">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 8.5C10 5.46 7.54 3 4.5 3H3v2h1.5C6.43 5 8 6.57 8 8.5V9H3v6h6V9h1V8.5zM21 8.5C21 5.46 18.54 3 15.5 3H14v2h1.5C17.43 5 19 6.57 19 8.5V9h-5v6h6V9h1V8.5z"
+              fill="#0273e7"></path>
+          </svg>
         </div>
+        <p class="fact-text">
+          <strong>Lionel Messi</strong> cuenta con una de las pólizas de seguro más
+          altas en la historia del deporte, cubriendo lesiones que podrían terminar
+          con su carrera. <strong>Prevenir es parte de ganar.</strong>
+        </p>
+        <p class="fact-reflection">La mejor jugada siempre es anticiparse.</p>
       </div>
 
-      <div class="comilla-3">
-        <svg
-          width="120"
-          height="120"
-          viewBox="0 0 8 8"
-          fill="currentColor"
-          color="#f1f3f6"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path
-            d="M0 0v3h2c0 1.11-.89 2-2 2v1c1.65 0 3-1.35 3-3v-3h-3zm5 0v3h2c0 1.11-.89 2-2 2v1c1.65 0 3-1.35 3-3v-3h-3z"
-            transform="translate(0 1)"></path></svg
-        >
+      <div class="fact-card">
+        <div class="fact-quote">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 8.5C10 5.46 7.54 3 4.5 3H3v2h1.5C6.43 5 8 6.57 8 8.5V9H3v6h6V9h1V8.5zM21 8.5C21 5.46 18.54 3 15.5 3H14v2h1.5C17.43 5 19 6.57 19 8.5V9h-5v6h6V9h1V8.5z"
+              fill="#0273e7"></path>
+          </svg>
+        </div>
+        <p class="fact-text">
+          <strong>David Beckham</strong> aseguró todo su cuerpo por más de <strong
+            >100 millones de dólares</strong
+          > durante su carrera. Su imagen y su físico eran su patrimonio — y lo trató
+          como tal.
+        </p>
+        <p class="fact-reflection">
+          Tu patrimonio también merece esa protección.
+        </p>
       </div>
+    </div>
+
+    <div class="gris-closing">
+      <p>No necesitas ser famoso para proteger lo que más importa.</p>
+      <a href="/cotiza" class="gris-cta">Quiero proteger lo mío →</a>
     </div>
   </div>
 </section>
@@ -405,9 +437,135 @@ import Whatsapp from "../components/Whatsapp.astro";
     padding-left: 1.1rem;
   }
 
+  /* ===== GRIS / FACTS SECTION ===== */
   .gris {
     background-color: #f7f8fb;
     width: 100%;
+    padding: 100px 0;
+  }
+
+  .gris-header {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 60px auto;
+  }
+
+  .gris-badge {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #0273e7;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+  }
+
+  .gris-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #1c2d43;
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+  }
+
+  .gris-subtitle {
+    font-size: 1.1rem;
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .fact-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 36px 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+
+  .fact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(2, 115, 231, 0.1);
+  }
+
+  .fact-quote {
+    margin-bottom: 20px;
+    opacity: 0.8;
+  }
+
+  .fact-text {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+    margin: 0 0 16px 0;
+  }
+
+  .fact-text strong {
+    color: #1c2d43;
+  }
+
+  .fact-reflection {
+    font-size: 0.9rem;
+    color: #0273e7;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0;
+  }
+
+  .gris-closing {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .gris-closing p {
+    font-size: 1.3rem;
+    color: #1c2d43;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+  }
+
+  .gris-cta {
+    display: inline-block;
+    background: #0273e7;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+      background 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .gris-cta:hover {
+    background: #0260c4;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 900px) {
+    .facts-grid {
+      grid-template-columns: 1fr;
+      max-width: 550px;
+    }
+
+    .gris-title {
+      font-size: 2.2rem;
+    }
   }
 
   /* ===== FEATURES / QUIÉNES SOMOS ===== */
@@ -520,6 +678,7 @@ import Whatsapp from "../components/Whatsapp.astro";
     margin-bottom: 2px;
     color: #1c2d43;
     font-weight: 700;
+    margin-top: 0;
   }
 
   .feature-role {
