@@ -1,29 +1,852 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Whatsapp from "../components/Whatsapp.astro"
 ---
 
 <Layout>
 
   <section class="header">
-    <h1 class="title">Productos</h1>
+    <span class="header-badge">Nuestros Productos</span>
+    <h1 class="title">Nuestros Seguros</h1>
+    <p class="header-subtitle">
+      En Aguayo & Asociados contamos con una amplia variedad de seguros diseñados para proteger lo que más valoras: tu salud, tu patrimonio y tu futuro.
+    </p>
   </section>
-
 </Layout>
 
-<style>
-.header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  <!-- tab de navegacion -->
+  <section class="productos-page">
+    <div class="productos-wrapper">
+      <nav class="tabs-nav" id="tabs-nav">
+        <button class="tab-btn active" data-tab="vida">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          Seguro de Vida
+        </button>
+        <button class="tab-btn" data-tab="gmm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+          Gastos Médicos
+        </button>
+        <button class="tab-btn" data-tab="educativo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+          Seguro Educativo
+        </button>
+        <button class="tab-btn" data-tab="retiro">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          Plan de Retiro
+        </button>
+        <button class="tab-btn" data-tab="negocio">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+          Negocio Protegido
+        </button>
+        <button class="tab-btn" data-tab="casa">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          Seguro de Casa
+        </button>
+        <button class="tab-btn" data-tab="auto">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+          Seguro de Auto
+        </button>
+        <button class="tab-btn" data-tab="hombre-clave">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          Hombre Clave
+        </button>
+      </nav>
 
-  padding-top:80px; /* separacion del navbar */
-  padding-bottom:80px;
+      <!-- ==================== tab de vida ==================== -->
+      <div class="tab-content active" id="tab-vida">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro de Vida</h2>
+            <p>El Seguro de Vida es una herramienta financiera que brinda protección económica a tus seres queridos en caso de fallecimiento. Además, algunos planes incluyen ahorro e inversión a mediano y largo plazo, ayudándote a cumplir metas como la educación de tus hijos o tu retiro.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>¿Qué tipos de seguro de vida existen?</h3>
+        </div>
+
+        <div class="cards-row">
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h4>Protección pura</h4>
+            <p>Este tipo de póliza está diseñado para ofrecer la máxima cobertura por el menor costo. Su única función es la protección: si el asegurado falta, la familia recibe el monto contratado.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h4>Protección + ahorro</h4>
+            <p>Combina la protección de vida con la creación de un fondo de ahorro o inversión, garantizándote un capital al final del plazo contratado (o en caso de fallecimiento). Son una excelente herramienta de disciplina financiera y planificación patrimonial a diferentes horizontes.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>¿Qué ventajas me ofrece?</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Cobertura por supervivencia</h4>
+            <p>Al final del plazo elegido, se te entregará el ahorro garantizado contratado (en caso de contar con un plan con componente de ahorro), incluida en la Cobertura Básica.</p>
+          </div>
+          <div class="info-card">
+            <h4>Cobertura por fallecimiento</h4>
+            <p>Si llegaras a faltar, tus beneficiarios recibirán la Suma Asegurada contratada, incluida en la Cobertura Básica.</p>
+          </div>
+          <div class="info-card">
+            <h4>Cobertura por invalidez</h4>
+            <p>Si llegaras a invalidarte, recibirás la Suma Asegurada contratada para este beneficio y sin más pago de primas, continuarás protegido por fallecimiento. Cobertura opcional con costo adicional.</p>
+          </div>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Para conocer más a detalle de las coberturas, contáctanos.</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar una asesoría</a>
+        </div>
+      </div>
+
+      <!-- ==================== TAB: GMM ==================== -->
+      <div class="tab-content" id="tab-gmm">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro de Gastos Médicos Mayores</h2>
+            <p>Un imprevisto de salud no solo afecta tu bienestar físico, sino que puede desequilibrar por completo tus finanzas, obligándote a usar tus ahorros, vender activos o endeudarte. El <strong>seguro de gastos médicos mayores</strong> es la herramienta esencial que te permite enfocar toda tu energía en la recuperación, asegurando el acceso a los mejores especialistas y hospitales en Culiacán y en el país.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>¿Por qué el SGMM es el escudo financiero más importante?</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Evita la deuda</h4>
+            <p>Una sola cirugía o enfermedad grave puede costar cientos de miles de pesos. Tu SGMM se hace cargo de los gastos fuertes.</p>
+          </div>
+          <div class="info-card">
+            <h4>Protección del patrimonio</h4>
+            <p>Tu fondo de emergencia se mantiene intacto. El seguro asume el riesgo que pondría en peligro tu casa, negocio o retiro.</p>
+          </div>
+          <div class="info-card">
+            <h4>Acceso a calidad</h4>
+            <p>Te da la libertad de elegir a tus médicos y el hospital que deseas, no limitarte al servicio público o a opciones de menor calidad.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Conceptos clave para entender tu SGMM</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Deducible</h4>
+            <p>Es el monto fijo inicial que tú pagas, antes de que el seguro comience a cubrir los gastos.</p>
+          </div>
+          <div class="info-card">
+            <h4>Coaseguro</h4>
+            <p>Es el porcentaje del gasto restante que tú cubres después de aplicar el deducible (Ej. 10%). Este porcentaje tiene un tope máximo de pago.</p>
+          </div>
+          <div class="info-card">
+            <h4>Suma asegurada</h4>
+            <p>Es el monto máximo que la aseguradora pagará por el evento o enfermedad.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Recupera dinero con tu seguro de gastos médicos mayores</h3>
+        </div>
+
+        <div class="highlight-box">
+          <p>Las primas que pagas por tu SGMM son <strong>deducibles de impuestos</strong>. Esto significa que puedes incluir tus pagos en tu declaración anual, lo que te ayuda a reducir tu carga fiscal y a obtener un saldo a favor de hacienda.</p>
+        </div>
+
+        <div class="product-cta-box">
+          <p>¿Quieres conocer las coberturas disponibles para ti?</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar una asesoría</a>
+        </div>
+      </div>
+
+      <!-- ==================== tab de educativo ==================== -->
+      <div class="tab-content" id="tab-educativo">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro Educativo</h2>
+            <p>Con el seguro educativo de GNP, puedes asegurar el futuro académico de tus hijos, sobrinos o nietos desde hoy. Este plan combina ahorro, protección y beneficios fiscales para que ningún imprevisto detenga sus sueños.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Pilares del seguro</h3>
+        </div>
+
+        <div class="cards-row">
+          <div class="info-card">
+            <h4>Ahorro Programado y Capital Garantizado</h4>
+            <p>A través de aportaciones periódicas, se genera un capital que se entrega a tu hijo al finalizar el plazo elegido (generalmente a los 18 o 22 años).</p>
+          </div>
+          <div class="info-card">
+            <h4>Protección que garantiza el cumplimiento del plan</h4>
+            <p>Si llegaras a faltar o quedar inválido, <strong>el seguro asume los pagos restantes</strong>. El ahorro de tu hijo sigue creciendo y el capital se entrega completo en la fecha prevista.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Ventajas clave del seguro educativo</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Ahorro con propósito</h4>
+            <p>Tu dinero no solo se guarda, <strong>crece con un objetivo claro</strong>: asegurar el futuro académico de tus hijos teniendo valores garantizados por contrato.</p>
+          </div>
+          <div class="info-card">
+            <h4>Plazos Flexibles</h4>
+            <p>Puede adaptarse a diferentes edades y plazos para que cumplas el objetivo.</p>
+          </div>
+          <div class="info-card">
+            <h4>Protección</h4>
+            <p>Suma Asegurada independiente destinada al ahorro. En caso de invalidez o fallecimiento, se cancela tu pago de Primas.</p>
+          </div>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Asegura el futuro de tus hijos hoy mismo.</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar mi asesoría</a>
+        </div>
+      </div>
+
+      <!-- ==================== tab de retiro ==================== -->
+      <div class="tab-content" id="tab-retiro">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Plan Personal de Retiro</h2>
+            <p>El PPR es un instrumento diseñado para ayudarte a construir un fondo para tu retiro de forma constante, segura y con beneficios fiscales. A través de aportaciones periódicas, puedes hacer crecer tu dinero con rendimientos atractivos y garantizar que, cuando llegue el momento de retirarte, cuentes con la estabilidad financiera que mereces.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Tu dinero creciendo a largo plazo con disciplina y seguridad</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Rendimientos seguros</h4>
+            <p>Tu dinero se invierte en estrategias de largo plazo que buscan rendimientos superiores a los de una cuenta bancaria tradicional.</p>
+          </div>
+          <div class="info-card">
+            <h4>Protección garantizada</h4>
+            <p>El PPR incluye una protección de seguro de vida que asegura que, pase lo que pase, el capital que has planeado para tu retiro llegará a su destino o a tus beneficiarios.</p>
+          </div>
+          <div class="info-card">
+            <h4>Tranquilidad</h4>
+            <p>Llegar al retiro con estabilidad financiera, sin depender únicamente del gobierno o terceros.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Beneficio fiscal: el mejor aliado de tu PPR</h3>
+        </div>
+
+        <div class="highlight-box">
+          <p>Uno de los mayores beneficios de contar con un <strong>Plan Personal de Retiro (PPR)</strong> es su <strong>ventaja fiscal</strong>: puedes deducir tus aportaciones anuales del ISR, lo que significa que pagas menos impuestos o incluso recibes saldo a favor al hacer tu declaración anual. En pocas palabras, el gobierno te premia por ahorrar para tu futuro.</p>
+          <p style="margin-top: 16px;">Y lo mejor de todo… Si mantienes tu ahorro hasta los 65 años, podrás retirar tu dinero <strong>libre de impuestos</strong>. Durante todo ese tiempo, tu PPR <strong>crece libre de ISR y con rendimientos competitivos</strong>, ayudándote a construir un retiro sólido y tranquilo.</p>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Empieza a construir tu retiro hoy.</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar mi asesoría</a>
+        </div>
+      </div>
+
+      <!-- ==================== TAB: NEGOCIO ==================== -->
+      <div class="tab-content" id="tab-negocio">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro Negocio Protegido PYMES</h2>
+            <p>Tu negocio es tu proyecto de vida, tu mayor inversión y tu fuente de ingresos. El Seguro Negocio Protegido es la herramienta esencial que garantiza que años de esfuerzo no se pierdan por un imprevisto. Te protege de los daños físicos (incendio, robo) y, lo más importante, del riesgo de tener que cerrar por falta de efectivo mientras te recuperas.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>El blindaje que garantiza la continuidad de tu negocio</h3>
+        </div>
+
+        <div class="highlight-box">
+          <p>El riesgo más grande no es el robo, es la <strong>interrupción de ingresos</strong>. Este seguro te protege de las peores consecuencias de un siniestro:</p>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Pérdida de Ingresos</h4>
+            <p>Si tienes que cerrar por un incendio o un daño, el seguro te paga las ganancias que dejas de percibir.</p>
+          </div>
+          <div class="info-card">
+            <h4>Gastos Fijos Cubiertos</h4>
+            <p>Cubre los gastos que no se detienen (salarios, renta, luz, agua), permitiéndote recuperarte sin endeudarte.</p>
+          </div>
+          <div class="info-card">
+            <h4>Responsabilidad con Terceros</h4>
+            <p>Te protege de demandas o daños accidentales a clientes o vecinos (Responsabilidad Civil).</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Coberturas clave</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Pérdidas consecuenciales</h4>
+            <p>Cubre la pérdida de ingresos y los gastos fijos (salarios, renta) mientras tu negocio está inoperable tras un siniestro.</p>
+          </div>
+          <div class="info-card">
+            <h4>Daños al inmueble y contenidos</h4>
+            <p>Ampara tu local, tu maquinaria, tu mobiliario y tu inventario o mercancía ante incendios, explosiones y fenómenos naturales.</p>
+          </div>
+          <div class="info-card">
+            <h4>Robo de contenidos y efectivo</h4>
+            <p>Te protege ante el robo de mercancía, equipo electrónico y hasta el robo de dinero (nóminas, efectivo en caja o en tránsito).</p>
+          </div>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Protege tu negocio de cualquier imprevisto.</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar una asesoría</a>
+        </div>
+      </div>
+
+      <!-- ==================== tab de casa ==================== -->
+      <div class="tab-content" id="tab-casa">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro de Casa</h2>
+            <p>El Seguro de hogar GNP es el escudo que necesitas para blindar tu patrimonio no solo ante las grandes catástrofes (incendios, huracanes, sismos), sino también ante los pequeños imprevistos diarios. Te garantizamos la tranquilidad de saber que, pase lo que pase, tu inversión y tu familia están cubiertas.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>El seguro de hogar resuelve dos tipos de problemas</h3>
+        </div>
+
+        <div class="cards-row">
+          <div class="info-card">
+            <h4>Riesgos mayores (Pérdida Total)</h4>
+            <p>Cobertura esencial ante Incendio, Terremoto y Riesgos Hidrometeorológicos (Huracanes, Inundaciones). Te asegura el capital para reconstruir o reparar tu inmueble, incluyendo cimientos y contenidos.</p>
+          </div>
+          <div class="info-card">
+            <h4>Riesgos menores y tecnológicos</h4>
+            <p>Te cubre ante fallas eléctricas, descargas o corto circuitos que dañen tus aparatos electrónicos o electrodomésticos, y el robo de contenidos o joyas.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>Coberturas esenciales</h3>
+        </div>
+
+        <div class="cards-row two-by-two">
+          <div class="info-card">
+            <h4>Edificio y Contenidos</h4>
+            <p>Ampara la estructura de tu casa o departamento y todos los bienes que están dentro (muebles, ropa, menaje de casa, etc.).</p>
+          </div>
+          <div class="info-card">
+            <h4>Responsabilidad Civil Familiar</h4>
+            <p>Te protege de los daños a terceros que tú, tu familia o tus mascotas puedan causar (ej. un daño a un vecino o a sus bienes).</p>
+          </div>
+          <div class="info-card">
+            <h4>Robo de Contenidos</h4>
+            <p>Cubre el robo de bienes dentro de tu hogar, joyas, y artículos de arte.</p>
+          </div>
+          <div class="info-card">
+            <h4>Equipo Electrónico</h4>
+            <p>Cobertura clave para reparación o reemplazo de aparatos electrónicos dañados por variaciones de voltaje o descargas.</p>
+          </div>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Blinda tu patrimonio hoy mismo.</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar una asesoría</a>
+        </div>
+      </div>
+
+      <!-- ==================== tab del auto ==================== -->
+      <div class="tab-content" id="tab-auto">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro de Auto</h2>
+            <p>En Aguayo & Asociados, te ayudamos a encontrar el seguro de auto ideal: cobertura completa, asesoría personalizada y opciones adaptadas al tipo de vehículo, uso y presupuesto en Sinaloa y en todo México. No solo aseguramos tu carro, aseguramos tu tranquilidad.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>¿Qué coberturas ofrecemos?</h3>
+        </div>
+
+        <div class="coverage-list">
+          <ul>
+            <li>Daños materiales por pérdida total</li>
+            <li>Daños materiales por pérdida parcial</li>
+            <li>Cristales</li>
+            <li>Robo total</li>
+            <li>Gastos médicos a ocupantes</li>
+            <li>Responsabilidad civil</li>
+            <li>Auto sustituto</li>
+            <li>Entre otras</li>
+          </ul>
+        </div>
+
+        <div class="section-band">
+          <h3>¿Qué elegir?</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card card-highlight">
+            <span class="card-label">Más completa</span>
+            <h4>Amplia</h4>
+            <p>La cobertura más completa. Incluye Daños Materiales, Robo Total, Responsabilidad Civil y más. Ideal para autos nuevos y seminuevos.</p>
+          </div>
+          <div class="info-card">
+            <h4>Limitada</h4>
+            <p>Cubre Robo Total, Responsabilidad Civil y Gastos Médicos. No cubre daños a tu vehículo en un choque (excepto si fue robo).</p>
+          </div>
+          <div class="info-card">
+            <h4>Responsabilidad civil</h4>
+            <p>Solo cubre los daños a terceros. Es el mínimo legal.</p>
+          </div>
+        </div>
+
+        <div class="highlight-box">
+          <p>Para cotizar tu seguro, puedes llenar el formulario o ponerte en contacto con nosotros. <strong>Cotizamos tu seguro con distintas aseguradoras</strong> para ofrecerte la mejor cobertura al mejor precio. Nuestro objetivo es ayudarte a proteger tu vehículo con una póliza que se adapte a ti, sin pagar de más.</p>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Cotiza tu seguro de auto hoy.</p>
+          <a href="/cotiza" class="product-cta-btn">Cotizar ahora</a>
+        </div>
+      </div>
+
+      <!-- ==================== tab de hombre clave ==================== -->
+      <div class="tab-content" id="tab-hombre-clave">
+        <div class="product-hero">
+          <div class="product-hero-text">
+            <h2>Seguro Hombre Clave</h2>
+            <p>El Seguro Hombre Clave es la herramienta estratégica que le permite a su empresa blindarse fiscalmente (deducción del 100%) mientras garantiza la continuidad y premia la lealtad de sus líderes esenciales. Proteja el activo que impulsa su crecimiento.</p>
+          </div>
+        </div>
+
+        <div class="section-band">
+          <h3>¿Qué protege este seguro?</h3>
+        </div>
+
+        <div class="cards-row three">
+          <div class="info-card">
+            <h4>Continuidad del negocio</h4>
+            <p>Garantiza liquidez inmediata ante la ausencia inesperada de un directivo, socio o colaborador indispensable para la operación.</p>
+          </div>
+          <div class="info-card">
+            <h4>Beneficio fiscal 100% deducible</h4>
+            <p>Las primas pagadas por la empresa son deducibles al 100%, convirtiéndolo en una inversión estratégica con ventajas fiscales reales.</p>
+          </div>
+          <div class="info-card">
+            <h4>Retención de talento</h4>
+            <p>Funciona como un beneficio adicional para premiar la lealtad y compromiso de los líderes clave de tu organización.</p>
+          </div>
+        </div>
+
+        <div class="product-cta-box">
+          <p>Protege el talento que impulsa tu empresa.</p>
+          <a href="/cotiza" class="product-cta-btn">Quiero agendar una asesoría</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <Whatsapp/>
+
+  <Footer />
+
+<style>
+
+/* ===== header y hero  ===== */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
-.title{
-  color:white;
-  font-size:48px;
-  font-weight:700;
-  text-align:center;
+.header-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* ===== PRODUCTOS PAGE ===== */
+.productos-page {
+  background: #ffffff;
+  padding: 0 0 80px 0;
+}
+
+.productos-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== TABS NAVIGATION ===== */
+.tabs-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 48px 0 40px 0;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 48px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: #f0f5ff;
+  border-color: #0273e7;
+  color: #0273e7;
+}
+
+.tab-btn.active {
+  background: #0273e7;
+  border-color: #0273e7;
+  color: #ffffff;
+}
+
+.tab-btn svg {
+  flex-shrink: 0;
+}
+
+.tab-btn.active svg {
+  stroke: #ffffff;
+}
+
+/* ===== TAB CONTENT ===== */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.35s ease;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== PRODUCT HERO ===== */
+.product-hero {
+  margin-bottom: 48px;
+}
+
+.product-hero-text h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 16px 0;
+}
+
+.product-hero-text p {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+  max-width: 850px;
+  margin: 0;
+}
+
+/* ===== SECTION BAND ===== */
+.section-band {
+  background: #1c2d43;
+  padding: 20px 32px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.section-band h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ===== INFO CARDS ===== */
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.cards-row.three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cards-row.two-by-two {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px 24px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.info-card-icon {
+  width: 48px;
+  height: 48px;
+  background: #e8f0fe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.info-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 10px 0;
+}
+
+.info-card p {
+  font-size: 0.92rem;
+  color: #4b5563;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Card highlight (auto "Amplia") */
+.card-highlight {
+  border-color: #0273e7;
+  background: #f0f5ff;
+}
+
+.card-label {
+  display: inline-block;
+  background: #0273e7;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+/* ===== HIGHLIGHT BOX ===== */
+.highlight-box {
+  background: #f0f5ff;
+  border-left: 4px solid #0273e7;
+  border-radius: 0 12px 12px 0;
+  padding: 28px 32px;
+  margin-bottom: 48px;
+}
+
+.highlight-box p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== COVERAGE LIST ===== */
+.coverage-list {
+  margin-bottom: 48px;
+  padding: 28px 32px;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.coverage-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.coverage-list li {
+  font-size: 0.95rem;
+  color: #374151;
+  padding-left: 24px;
+  position: relative;
+}
+
+.coverage-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #0273e7;
+  font-weight: 700;
+}
+
+/* ===== CTA BOX ===== */
+.product-cta-box {
+  text-align: center;
+  padding: 40px;
+  background: #f9fafb;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  margin-top: 16px;
+}
+
+.product-cta-box p {
+  font-size: 1.15rem;
+  color: #374151;
+  margin: 0 0 20px 0;
+}
+
+.product-cta-btn {
+  display: inline-block;
+  background: #0273e7;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.product-cta-btn:hover {
+  background: #0260c4;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .cards-row,
+  .cards-row.three,
+  .cards-row.two-by-two {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-list ul {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs-nav {
+    gap: 6px;
+  }
+
+  .tab-btn {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .product-hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs-nav {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tab-btn {
+    flex-shrink: 0;
+  }
 }
 </style>
+
+<script>
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-tab');
+
+      // Remove active from all
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabContents.forEach(c => c.classList.remove('active'));
+
+      // Set active
+      btn.classList.add('active');
+      const targetEl = document.getElementById(`tab-${target}`);
+      if (targetEl) {
+        targetEl.classList.add('active');
+        // Re-trigger fade animation
+        targetEl.style.animation = 'none';
+        targetEl.offsetHeight; // force reflow
+        targetEl.style.animation = '';
+      }
+
+      // Scroll to top of content smoothly
+      document.querySelector('.tabs-nav')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
