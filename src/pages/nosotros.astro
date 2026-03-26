@@ -1,29 +1,594 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Whatsapp from "../components/Whatsapp.astro";
+import quienesSomos from "../assets/quienes-somos.png";
 ---
 
 <Layout>
 
   <section class="header">
+    <!-- <span class="header-badge">Nuestra Historia</span> -->
     <h1 class="title">Nosotros</h1>
+    <p class="header-subtitle">
+      Conoce al equipo que protege lo que más importa para ti y tu familia.
+    </p>
   </section>
 
 </Layout>
 
-<style>
-.header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+<!-- ===== QUIÉNES SOMOS ===== -->
+<section class="about-section">
+  <div class="about-wrapper">
+    <div class="about-header">
+      <span class="about-badge">Aguayo & Asociados</span>
+      <h2>¿Quiénes somos?</h2>
+      <p>
+        En Aguayo & Asociados, somos expertos en seguros, protección financiera y crecimiento patrimonial. Nos especializamos en brindar soluciones que resguarden lo más importante para nuestros clientes: su bienestar, el de su familia y su futuro financiero.
+      </p>
+    </div>
 
-  padding-top:80px; /* separacion del navbar */
-  padding-bottom:80px;
+    <div class="about-card">
+      <div class="about-grid">
+        <div class="about-image">
+          <img
+            src={quienesSomos.src}
+            alt="Equipo Aguayo y Asociados"
+          />
+        </div>
+
+        <div class="about-text">
+          <div class="highlight-box">
+            <p>
+              Con más de <strong>17 años de experiencia</strong>, hemos logrado posicionarnos dentro del <strong>Top 10 a nivel nacional en GNP Seguros</strong>, respaldando a cientos de personas con planes de protección, inversión y retiro diseñados a la medida de sus necesidades en toda la república mexicana.
+            </p>
+          </div>
+
+          <div class="stats-row">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>+1,000 familias</h4>
+                <p>protegidas con nosotros</p>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4>Top 10 Nacional</h4>
+                <p>en GNP Seguros</p>
+              </div>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>17+ años</h4>
+                <p>de experiencia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EQUIPO ===== -->
+<section class="team-section">
+  <div class="team-wrapper">
+    <div class="team-header">
+      <span class="about-badge">Nuestro Equipo</span>
+      <h2>Las personas detrás de tu protección</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <h3>Claudio Aguayo</h3>
+        <span class="team-role">Director general</span>
+        <p>
+          Con más de 18 años liderando la empresa, Claudio Aguayo es el pilar estratégico que guía cada decisión con visión, experiencia y un profundo compromiso con cada cliente.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <h3>Enrique Aguayo</h3>
+        <span class="team-role">Asesor de seguros</span>
+        <p>
+          Especialista en seguros de vida y gastos médicos. Enrique Aguayo se dedica a encontrar la póliza perfecta que se adapte a las necesidades únicas de cada familia.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <h3>Diego Aguayo</h3>
+        <span class="team-role">Asesor de Seguros</span>
+        <p>
+          Experto en seguros patrimoniales y empresariales. Diego ayuda a empresas y particulares a proteger sus bienes con soluciones integrales y personalizadas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== UBICACIÓN / MAPA ===== -->
+<section class="map-section">
+  <div class="map-wrapper">
+    <div class="map-header">
+      <span class="about-badge">Ubicación</span>
+      <h2>Visítanos</h2>
+      <p>Río Elota 197, Guadalupe, 80220 Culiacán Rosales, Sin., México</p>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.1234567890123!2d-107.3905113!3d24.7939548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcd0b5e0be7207%3A0x86afd8282599bb9b!2sR%C3%ADo%20Elota%20197%2C%20Guadalupe%2C%2080220%20Culiac%C3%A1n%20Rosales%2C%20Sin.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx"
+        width="100%"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Ubicación Aguayo y Asociados"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="nosotros-cta-section">
+  <div class="nosotros-cta-wrapper">
+    <div class="nosotros-cta-box">
+      <h2>¿Listo para proteger lo que más importa?</h2>
+      <p>Agenda una asesoría personalizada con nuestro equipo de expertos.</p>
+      <a href="/cotiza" class="nosotros-cta-btn">Quiero agendar una asesoría</a>
+    </div>
+  </div>
+</section>
+
+<Whatsapp />
+<Footer />
+
+<style>
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
-.title{
-  color:white;
-  font-size:48px;
-  font-weight:700;
-  text-align:center;
+.header-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  padding: 100px 0;
+  background: #f8f9fc;
+}
+
+.about-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.about-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+}
+
+.about-badge {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #0273e7;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.about-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.about-header p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-card {
+  background: white;
+  border-radius: 14px;
+  padding: 40px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.about-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.highlight-box {
+  background: #f0f5ff;
+  border-left: 4px solid #0273e7;
+  border-radius: 0 12px 12px 0;
+  padding: 28px 32px;
+}
+
+.highlight-box p {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.stats-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-item:hover {
+  background: #f0f5ff;
+  box-shadow: 0 4px 16px rgba(2, 115, 231, 0.08);
+}
+
+.stat-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  background: #e8f0fe;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 4px 0;
+}
+
+.stat-item p {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+/* ===== TEAM SECTION ===== */
+.team-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.team-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.team-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+}
+
+.team-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.team-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 36px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(2, 115, 231, 0.1);
+}
+
+.team-icon {
+  width: 60px;
+  height: 60px;
+  background: #e8f0fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.team-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 8px 0;
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0273e7;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+}
+
+.team-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ===== MAP SECTION ===== */
+.map-section {
+  padding: 100px 0;
+  background: #f8f9fc;
+}
+
+.map-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.map-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 48px auto;
+}
+
+.map-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.map-header p {
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.map-container {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+}
+
+/* ===== CTA SECTION ===== */
+.nosotros-cta-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.nosotros-cta-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nosotros-cta-box {
+  text-align: center;
+  padding: 60px 40px;
+  background: #1c2d43;
+  border-radius: 20px;
+  color: white;
+}
+
+.nosotros-cta-box h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.nosotros-cta-box p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin: 0 0 32px 0;
+  line-height: 1.7;
+}
+
+.nosotros-cta-btn {
+  display: inline-block;
+  background: #0273e7;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.nosotros-cta-btn:hover {
+  background: #0260c4;
+  transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .about-header h2,
+  .team-header h2,
+  .map-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .nosotros-cta-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 24px;
+  }
+
+  .highlight-box {
+    padding: 20px 24px;
+  }
+
+  .nosotros-cta-box {
+    padding: 40px 24px;
+  }
+
+  .map-container iframe {
+    height: 280px;
+  }
 }
 </style>
