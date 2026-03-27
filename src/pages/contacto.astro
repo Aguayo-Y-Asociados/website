@@ -1,29 +1,325 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import Whatsapp from "../components/Whatsapp.astro";
+import enriqueImg from "../assets/enrique.png";
+import diegoImg from "../assets/diego.png";
 ---
 
 <Layout>
 
   <section class="header">
     <h1 class="title">Contacto</h1>
+    <p class="header-subtitle">
+      Estamos aquí para ayudarte a proteger tu patrimonio y hacer crecer tu dinero.
+    </p>
   </section>
 
 </Layout>
 
-<style>
-.header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
+<!-- ===== INTRO ===== -->
+<section class="intro-section">
+  <div class="intro-wrapper">
+    <div class="intro-header">
+      <span class="contacto-badge">Aguayo & Asociados</span>
+      <h2>Nuestro compromiso contigo</h2>
+      <p>
+        En Aguayo y Asociados, nuestro objetivo es doble: asegurar tu patrimonio con estrategias sólidas y hacer crecer tu dinero de manera segura y planeada. Estamos aquí para simplificar tus finanzas, proteger todo lo que has construido y guiarte para que cada peso invertido trabaje por ti.
+      </p>
+    </div>
+  </div>
+</section>
 
-  padding-top:80px; /* separacion del navbar */
-  padding-bottom:80px;
+<!-- ===== ASESORES ===== -->
+<section class="asesores-section">
+  <div class="asesores-wrapper">
+    <div class="asesores-grid">
+
+      <!-- Enrique Aguayo -->
+      <div class="asesor-card">
+        <div class="asesor-image">
+          <img src={enriqueImg.src} alt="Enrique Aguayo" />
+        </div>
+        <h3>Enrique Aguayo</h3>
+        <a href="/cotiza" class="asesor-btn">Quiero agendar una asesoría</a>
+      </div>
+
+      <!-- Diego Aguayo -->
+      <div class="asesor-card">
+        <div class="asesor-image">
+          <img src={diegoImg.src} alt="Diego Aguayo" />
+        </div>
+        <h3>Diego Aguayo</h3>
+        <a href="/cotiza" class="asesor-btn">Quiero cotizar un seguro</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACTO INFO ===== -->
+<section class="contacto-info-section">
+  <div class="contacto-info-wrapper">
+    <div class="contacto-info-box">
+      <div class="contacto-info-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0273e7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </div>
+      <p>Para más información de contacto, te dejamos nuestro correo:</p>
+      <a href="mailto:aguayooyasociados@gmail.com" class="contacto-email">aguayooyasociados@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<Whatsapp />
+<Footer />
+
+<style>
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 120px;
 }
 
-.title{
-  color:white;
-  font-size:48px;
-  font-weight:700;
-  text-align:center;
+.title {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 16px 0;
+}
+
+.header-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+  text-align: center;
+  max-width: 700px;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* ===== INTRO SECTION ===== */
+.intro-section {
+  padding: 100px 0;
+  background: #f8f9fc;
+}
+
+.intro-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.intro-header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contacto-badge {
+  display: inline-block;
+  background: #e8f0fe;
+  color: #0273e7;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.intro-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.intro-header p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ===== ASESORES SECTION ===== */
+.asesores-section {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.asesores-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.asesores-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.asesor-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.asesor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(2, 115, 231, 0.1);
+}
+
+.asesor-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 24px auto;
+  border: 4px solid #e8f0fe;
+}
+
+.asesor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.asesor-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1c2d43;
+  margin: 0 0 20px 0;
+}
+
+.asesor-btn {
+  display: inline-block;
+  background: #0273e7;
+  color: #ffffff;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.asesor-btn:hover {
+  background: #0260c4;
+  transform: translateY(-2px);
+}
+
+/* ===== CONTACTO INFO SECTION ===== */
+.contacto-info-section {
+  padding: 100px 0;
+  background: #f8f9fc;
+}
+
+.contacto-info-wrapper {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contacto-info-box {
+  text-align: center;
+  padding: 60px 40px;
+  background: #1c2d43;
+  border-radius: 20px;
+  color: white;
+}
+
+.contacto-info-icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px auto;
+}
+
+.contacto-info-icon svg {
+  stroke: #ffffff;
+}
+
+.contacto-info-box p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin: 0 0 16px 0;
+  line-height: 1.7;
+}
+
+.contacto-email {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 28px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.contacto-email:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .asesores-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
+  }
+
+  .intro-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .contacto-email {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .asesor-card {
+    padding: 30px 20px;
+  }
+
+  .asesor-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .contacto-info-box {
+    padding: 40px 24px;
+  }
+
+  .contacto-email {
+    font-size: 0.95rem;
+    padding: 8px 20px;
+  }
 }
 </style>
