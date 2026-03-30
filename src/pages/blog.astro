@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import BlogContent from "../components/BlogContent.astro";
+import Footer from "../components/Footer.astro";
+import Whatsapp from "../components/Whatsapp.astro";
 ---
 
 <Layout>
@@ -9,24 +10,440 @@ import BlogContent from "../components/BlogContent.astro";
     <h1 class="title">Blog</h1>
   </section>
 
-  
 </Layout>
-<BlogContent></BlogContent>
+
+<!-- seccion de las cartas del blog -->
+<section class="blog-cards-section">
+  <div class="blog-container">
+    <h2 class="blog-subtitle">Blog: Recursos útiles para proteger tu futuro</h2>
+
+    <div class="cards-grid">
+
+      <!-- Card 1: PPR -->
+      <div class="blog-card" id="card-ppr">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop" alt="Plan Personal de Retiro" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">El futuro no se improvisa: ¿por qué tener un Plan Personal de Retiro (PPR)?</h3>
+          <p class="card-excerpt">Si quieres asegurar un retiro digno, este artículo te explica cómo hacerlo y por qué es tan importante.</p>
+          <button class="btn-leer-mas" data-target="article-ppr">Leer más</button>
+        </div>
+      </div>
+
+      <!-- Card 2: SGMM -->
+      <div class="blog-card" id="card-sgmm">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&h=400&fit=crop" alt="Seguro de Gastos Médicos Mayores" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Un accidente puede cambiarlo todo: ¿por qué tener un Seguro de Gastos Médicos Mayores?</h3>
+          <p class="card-excerpt">Te contamos los principales beneficios y por qué es fundamental proteger tu salud y patrimonio.</p>
+          <button class="btn-leer-mas" data-target="article-sgmm">Leer más</button>
+        </div>
+      </div>
+
+      <!-- Card 3: Seguro Educativo -->
+      <div class="blog-card" id="card-edu">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?w=600&h=400&fit=crop" alt="Seguro Educativo" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">El mejor regalo para tus hijos: un Seguro Educativo.</h3>
+          <p class="card-excerpt">Descubre cómo garantizar el futuro profesional de tus hijos.</p>
+          <button class="btn-leer-mas" data-target="article-edu">Leer más</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- seccion de articulos -->
+
+<!-- articulo 1: PPR -->
+<section class="article-full" id="article-ppr">
+  <div class="article-container">
+    <button class="btn-volver" data-scroll="card-ppr">&larr; Volver a los artículos</button>
+    <h2 class="article-title">¿Cómo empezar un PPR y asegurar un retiro digno en México?</h2>
+
+    <p>Muchos esperan que la pensión pública sea suficiente para cubrir su retiro… pero la realidad es que hoy en México, esa seguridad ya no está garantizada. El futuro no se improvisa, y un <strong>Plan Personal de Retiro (PPR)</strong> es la herramienta que te permite tomar el control, ahorrar con disciplina y aprovechar beneficios fiscales que la mayoría desconoce.</p>
+
+    <h3>¿Qué es un PPR?</h3>
+    <p>Un PPR es un instrumento financiero diseñado específicamente para ayudarte a ahorrar de manera ordenada con el objetivo de tu jubilación. Funciona como una cuenta en la que aportas periódicamente y tu dinero se invierte en diferentes instrumentos (acciones, bonos, fondos, etc.), generando rendimientos a largo plazo.</p>
+    <p>Lo más importante es que está pensado para el retiro, por lo que tiene beneficios fiscales y ventajas que otros ahorros comunes no ofrecen.</p>
+
+    <h3>Beneficios clave: rendimientos, flexibilidad y deducción fiscal</h3>
+    <ul>
+      <li><strong>Rendimientos superiores</strong> a los de un ahorro tradicional en el banco.</li>
+      <li><strong>Flexibilidad</strong> para elegir el tipo de portafolio (conservador, moderado o agresivo).</li>
+      <li><strong>Deducción fiscal:</strong> las aportaciones a tu PPR pueden deducirse de impuestos, ayudándote a pagar menos ISR cada año.</li>
+      <li><strong>Disciplina automática:</strong> puedes programar tus aportaciones y olvidarte de la preocupación mes a mes.</li>
+    </ul>
+
+    <h3>Comparativa con CETES u otras inversiones conservadoras</h3>
+    <p>Los CETES son seguros y ofrecen rendimientos fijos, pero limitados. En cambio, un PPR combina seguridad con la posibilidad de obtener mayores ganancias, ya que invierte en mercados más diversificados. Además, a diferencia de los CETES, el PPR está diseñado con un objetivo específico: tu retiro, lo que asegura constancia y beneficios fiscales que los CETES no tienen.</p>
+
+    <h3>¿Para quién es ideal y cómo diseñarlo según tu etapa de vida?</h3>
+    <ul>
+      <li><strong>Jóvenes (20-30 años):</strong> entre más pronto empieces, menos tendrás que aportar para lograr un gran fondo gracias al interés compuesto.</li>
+      <li><strong>Adultos (30-45 años):</strong> aún estás en una etapa clave para construir tu plan y aprovechar deducciones fiscales.</li>
+      <li><strong>Mayores de 45 años:</strong> es urgente iniciar; mientras antes ajustes tu PPR, mejor preparado estarás para el retiro.</li>
+    </ul>
+    <p>Cada plan debe adaptarse a tus ingresos, metas y tolerancia al riesgo.</p>
+
+    <div class="article-cta">
+      <p>El retiro no se improvisa, se planea. Un <strong>Plan Personal de Retiro (PPR)</strong> es más que una inversión: es la tranquilidad de saber que tu futuro financiero estará asegurado.</p>
+      <p><strong>Agenda una asesoría con nosotros en Aguayo &amp; Asociados y empieza hoy mismo a construir el retiro que mereces.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- articulo 2 SGMM -->
+<section class="article-full" id="article-sgmm">
+  <div class="article-container">
+    <button class="btn-volver" data-scroll="card-sgmm">&larr; Volver a los artículos</button>
+    <h2 class="article-title">Un accidente puede cambiarlo todo: ¿por qué tener un Seguro de Gastos Médicos Mayores?</h2>
+
+    <p>La vida puede dar un giro inesperado en cuestión de segundos. Una caída, un mal paso en la escalera, un diagnóstico repentino. De pronto, la factura del hospital es más alta que el enganche de tu casa. Esto no es un cuento de terror, es la realidad de miles de personas.</p>
+
+    <h3>Sin un Seguro de Gastos Médicos Mayores (SGMM), una emergencia de salud puede significar:</h3>
+    <ul>
+      <li>Deudas a largo plazo.</li>
+      <li>Tener que vender tu auto o propiedades.</li>
+      <li>Afectar el patrimonio de toda la familia.</li>
+    </ul>
+    <p>Toda tu estabilidad financiera, construida con años de trabajo, puede desaparecer en una noche.</p>
+
+    <h3>¿Qué te cubre un SGMM?</h3>
+    <p>Un Seguro de Gastos Médicos Mayores es la protección que necesitas para que un imprevisto no te deje sin nada. Te cubre los gastos médicos derivados de un accidente o enfermedad, incluyendo:</p>
+    <ul>
+      <li>Hospitalización</li>
+      <li>Honorarios médicos</li>
+      <li>Cirugías y tratamientos</li>
+      <li>Medicamentos</li>
+      <li>Terapias y rehabilitación</li>
+    </ul>
+
+    <div class="article-cta">
+      <p>Al final del día, no solo compras una póliza. Compras la tranquilidad de saber que tú y tu familia tendrán acceso a la mejor atención médica en Culiacán sin tener que sacrificar su patrimonio. Es una inversión en tu bienestar y en tu paz mental.</p>
+      <p><strong>No dejes que tu patrimonio se esfume en un imprevisto. Conoce cómo puedes proteger tu salud y tu bolsillo.</strong></p>
+      <p><strong>Aguayo y Asociados, por API seguros.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- articulo 3 Seguro Educativo -->
+<section class="article-full" id="article-edu">
+  <div class="article-container">
+    <button class="btn-volver" data-scroll="card-edu">&larr; Volver a los artículos</button>
+    <h2 class="article-title">El mejor regalo para tus hijos: un Seguro Educativo.</h2>
+
+    <p>Como padres, queremos darles el mundo a nuestros hijos. Desde el momento en que llegan a nuestra vida, soñamos con darles las mejores herramientas para que conquisten sus sueños. La más valiosa de todas es una educación de calidad.</p>
+
+    <p>El costo de una universidad aumenta año con año. ¿Estás preparado para pagar la educación de tus hijos en 15 o 20 años? Si dependes de tus ahorros, la inflación y los gastos inesperados pueden poner en riesgo su futuro.</p>
+
+    <h3>¿Qué es un Seguro Educativo?</h3>
+    <p>Un Seguro Educativo es un plan de ahorro diseñado específicamente para garantizar la educación universitaria de tus hijos. Es una combinación inteligente de un seguro de vida y un fondo de ahorro a largo plazo.</p>
+
+    <h3>Ventajas Únicas:</h3>
+    <ul>
+      <li><strong>Protección Garantizada:</strong> Pase lo que pase, el dinero para la educación de tus hijos estará seguro. Si el padre o tutor llegara a faltar, la aseguradora se encarga de cubrir las aportaciones restantes y entregar el capital para la universidad.</li>
+      <li><strong>Planificación a Largo Plazo:</strong> Te permite ahorrar en pequeñas cantidades a lo largo del tiempo, sin la presión de tener que cubrir todo el gasto de golpe.</li>
+      <li><strong>Disciplina de Ahorro:</strong> Te obliga a ser constante con tus aportaciones para que no dejes la educación de tus hijos para después.</li>
+    </ul>
+
+    <div class="article-cta">
+      <p><strong>No dejes el futuro de tus hijos al azar. Agenda una asesoría con Aguayo &amp; Asociados y asegura su educación hoy.</strong></p>
+    </div>
+  </div>
+</section>
+
+<Whatsapp />
+<Footer />
 
 <style>
-.header{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
-  padding-top:80px; /* separacion del navbar */
-  padding-bottom:80px;
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.title{
-  color:white;
-  font-size:48px;
-  font-weight:700;
-  text-align:center;
+.title {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Blog Cards Section */
+.blog-cards-section {
+  padding: 60px 0;
+  background-color: #f8fafc;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 40px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* cada card */
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.card-excerpt {
+  font-size: 15px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+.btn-leer-mas {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #1e3a5f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leer-mas:hover {
+  background-color: #152d4a;
+}
+
+/*   secciones de articulos */
+.article-full {
+  display: none;
+  padding: 60px 0;
+  background-color: #ffffff;
+  border-top: 3px solid #1e3a5f;
+}
+
+.article-full.active {
+  display: block;
+}
+
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: #f1f5f9;
+  color: #1e3a5f;
+  border: 2px solid #1e3a5f;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #1e3a5f;
+  color: white;
+}
+
+.article-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+.article-full p {
+  font-size: 17px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.article-full h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.article-full ul {
+  margin-bottom: 20px;
+  padding-left: 24px;
+}
+
+.article-full ul li {
+  font-size: 17px;
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.article-cta {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #f0f4f8;
+  border-left: 5px solid #1e3a5f;
+  border-radius: 0 8px 8px 0;
+}
+
+.article-cta p {
+  font-size: 17px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.article-cta p:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .blog-subtitle {
+    font-size: 26px;
+  }
+
+  .article-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .blog-subtitle {
+    font-size: 22px;
+  }
+
+  .header {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .article-title {
+    font-size: 22px;
+  }
+
+  .article-full p,
+  .article-full ul li {
+    font-size: 16px;
+  }
 }
 </style>
+
+<script>
+  // "Leer más" buttons - mostrar el articulo correspondiente
+  document.querySelectorAll('.btn-leer-mas').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const targetArticle = document.getElementById(targetId);
+
+      // Hide todos los articulos
+      document.querySelectorAll('.article-full').forEach(article => {
+        article.classList.remove('active');
+      });
+
+      // mostrar articulo 
+      if (targetArticle) {
+        targetArticle.classList.add('active');
+        targetArticle.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // "Volver" botones
+  document.querySelectorAll('.btn-volver').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const scrollTarget = btn.getAttribute('data-scroll');
+
+      // Hide todos los articulos
+      document.querySelectorAll('.article-full').forEach(article => {
+        article.classList.remove('active');
+      });
+
+      // scroll de la carta
+      const card = document.getElementById(scrollTarget);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    });
+  });
+</script>
