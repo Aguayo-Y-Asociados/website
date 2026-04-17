@@ -6,6 +6,7 @@ import Questions from "../components/Questions.astro";
 import Footer from "../components/Footer.astro";
 import Carousel from "../components/Carousel.astro";
 import Whatsapp from "../components/Whatsapp.astro";
+import quienes from "../assets/quienes-somos.png";
 ---
 
 <BaseLayout />
@@ -27,7 +28,7 @@ import Whatsapp from "../components/Whatsapp.astro";
     <div class="features-grid">
       <div class="features-images">
         <img
-          src="/src/assets/quienes-somos.png"
+          src={quienes.src}
           class="feature-img"
           alt="Equipo Aguayo y Asociados"
         />
