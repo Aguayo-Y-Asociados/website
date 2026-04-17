@@ -4,7 +4,7 @@
 
 <nav class="navbar">
   <div class="container">
-    <a href="/" class="logo">
+    <a href="/website" class="logo">
       <img
         src="/src/assets/aguayoLogoWhite.png"
         alt="AguayosLogoA"
@@ -18,16 +18,16 @@
     </a>
 
     <ul class="menu">
-      <li><a href="/nosotros">Nosotros</a></li>
-      <li><a href="/productos">Productos</a></li>
-      <li><a href="/contacto">Contacto</a></li>
-      <li><a href="/blog">Blog</a></li>
-      <li><a href="/cotiza">Consultas</a></li>
+      <li><a href={`${import.meta.env.BASE_URL}/nosotros`}>Nosotros</a></li>
+      <li><a href={`${import.meta.env.BASE_URL}/productos`}>Productos</a></li>
+      <li><a href={`${import.meta.env.BASE_URL}/contacto`}>Contacto</a></li>
+      <li><a href={`${import.meta.env.BASE_URL}/blog`}>Blog</a></li>
+      <li><a href={`${import.meta.env.BASE_URL}/cotiza`}>Consultas</a></li>
     </ul>
 
     <div class="actions">
       <!-- <a href="/account" class="login">Iniciar Sesion</a> -->
-      <a href="/get-started" class="btn">Cotizar Ahora</a>
+      <a href={`${import.meta.env.BASE_URL}/get-started`} class="btn">Cotizar Ahora</a>
     </div>
   </div>
 </nav>
